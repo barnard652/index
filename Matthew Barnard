@@ -1,0 +1,533 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="color:selection" content="#eee"/>
+        <meta name="color:Content Background" content="#fff"/>
+        <meta name="color:Heading text" content=""/>
+        <meta name="color:Text" content="#000"/>
+        <meta name="font:Body" content=""/>
+        <meta name="image:BackgroundOne" content="http://static.tumblr.com/..."/>
+        <meta name="image:BackgroundTwo" content="http://static.tumblr.com/..."/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
+        <link rel="shortcut icon" type="image/x-icon" href="http://static.tumblr.com/i0wttqk/prGow8f4d/hi-website.png">
+        <meta name="description" content="/">
+        <script src="https://use.typekit.net/bfu7lrf.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+            <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81747723-2', 'auto');
+  ga('send', 'pageview');
+</script> 
+	
+    </head>
+	
+<style>
+	/*REMOVEING MOBLE HEADER START*/
+    #wrapper #title {display:none;visibility:hidden;}#header{display:none;visibility:hidden;}#tumblr_controls, .tmblr-iframe{display:none !important;}
+	/*REMOVEING MOBLE HEADER END*/
+	body {
+		width: 100%;
+		margin: 0em;
+		display: inline-block;
+		font-family: "din-condensed", {TitleFont};
+		color: #444444;
+		background:#f9f9f9;
+		scroll-behavior: smooth;
+		overflow-x: hidden;
+	}
+	h1 {
+		width: -webkit-fit-content;
+  		width: -moz-fit-content;
+  		width: fit-content;
+	}
+	a {
+		color:#444444 ;
+		text-decoration: none;
+	}
+	/*NAV START*/
+	nav {
+	    position:fixed;
+        top:1.7em;
+        right:1em;
+		display: inline-block;
+		float: right;
+		color: #FFFFFF;
+		z-index:999;
+	}
+    #nav_burger{
+        text-align:left;
+        color:{TitleColor};
+        z-index:2;
+        position:fixed;
+        top:2em;
+        right:1em;
+    }
+    #nav_burger:hover {color:#ffffff;}
+	.sidenav {
+    	height: 100%;
+    	width: 0em;
+		margin:0em;
+    	position: fixed;
+    	z-index: 999;
+    	top: 0;
+    	left: 0;
+    	text-align:left;
+		background-color: rgba(255, 255, 255, 1);
+    	overflow-x: hidden;
+    	transition: 0.5s;
+    	padding-top: 60px;
+    	font-family: {AccentColor};
+    	display:block;
+	}
+	.sidenav a {
+		margin: 0em;
+    	padding: 8px 8px 8px 32px;
+    	text-decoration: none;
+    	font-size: 30pt;
+    	color: {AccentColor};
+    	display: block;
+    	transition: 0.3s
+	}
+    .sidenav a:hover {
+        color: {BackgroundColor};
+        -webkit-transition: width .4s;
+        transition: width .4s;
+        transition: 0.4s
+    }
+	.sidenav .closebtn {
+    	float:right;
+    	top: -0.9em;
+    	right: .5em;
+    	font-size: 20pt;
+		position: relative;
+        text-align:left;
+	}
+	a .closebtn:hover {background-color: {BackgroundColor};}
+	.dropdown {}
+	.dropdown-content {
+	    display: none;
+	    width:96%;
+	    font-size:15pt;
+	    line-height:1em;
+        padding: 2%;
+        padding-top:.5em;
+        padding-bottom:.5em;
+        z-index: 1;
+    }
+    .dropdown-content a {font-size:1.2em;margin:-0.5em;color:{color:Text};}
+    .dropdown:hover .dropdown-content {display: block;}
+    .dropdown-content a: {color: {AccentColor} ;}
+	#socal_links {float:right;display:inline;position:absolute;bottom:6em;right:.7em;}
+	a .fa {font-size:22pt;margin:.7em;color:{AccentColor};display:inline;}
+	a:hover .fa {color:{BackgroundColor};}
+	/*NAV END*/
+	::selection {background: #ff9933; color:#FFFFFF;}
+	header {
+		width: 90%;
+		padding: 5%;
+		padding-top: 7em;
+	}
+	header h1 {
+		margin-top: -.8em;
+		font-size: 90pt;
+		font-weight: 800;
+		text-transform: uppercase;
+		color: #444444 ;
+		letter-spacing: .01em;
+	/*header animation START*/
+		-webkit-animation-name: header;-webkit-animation-duration: 0.6s;animation-name: header;animation-duration: header 0.6s;}@-webkit-keyframes header {0% {color: {AccentColor}; font-size:89pt;} 25% { letter-spacing: .01em; text-shadow: 2px 0px 0px rgba(255, 0, 0, 0.8);letter-spacing: -0.2px; font-size:90.5pt;}52% {text-shadow: -2px 0px 0px rgba(0, 255, 0, 0.8); color: {AccentColor}; font-size:90pt;}69% {text-shadow: -2px 0px 0px rgba(0, 0, 255, 0.8); color: #171717; font-size:89pt;}100% {color: {AccentColor};font-size:90pt;}}@keyframes header {0% {color: {AccentColor};letter-spacing: 0em; font-size:90pt;} 25% {letter-spacing: .02em; text-shadow: 2px 0px 0px rgba(255, 0, 0, 0.8);letter-spacing: -0.2px; font-size:91pt;}52% {text-shadow: -2px 0px 0px rgba(0, 255, 0, 0.8); color: #434343; font-size:90pt;}69% {text-shadow: -2px 0px 0px rgba(0, 0, 255, 0.8); color: {AccentColor}; font-size:89pt;}100% {color: {AccentColor};font-size:90pt;}}
+	/*header animation END*/
+	}
+	h1 a:hover {color: #FFFFFF;}
+	header h1 a:hover {
+	    text-decoration: none;
+        background: #ff9933;
+        opacity:1;
+        color: #FFFFFF;
+        white-space: pre-wrap;
+        padding-left:.1em;
+        padding-right:.1em;
+        box-decoration-break: clone;
+		/* BOX SHADOW
+        -webkit-box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
+        -moz-box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
+        box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
+		*/
+	}
+	#hero-box{
+		width: 85%;
+		height: 32em;
+		border: 4px solid #ff9933;
+		position: absolute;
+		top: 5em;
+		left: 7.5%;
+		z-index: -999;
+		
+	}
+	.hero-image {
+		width:85%;
+		height: 32em;
+	    position: absolute;
+	    top: 4em;
+		left: 6%;
+	    z-index:-99;
+	    background: url(https://static.tumblr.com/i0wttqk/tmDp6uwmw/artboard_1_3x.png);
+	    background-size:20%;
+	    background-position: fixed;
+	}
+	.hero-text h1:first-child:hover ~ .hero-image { background-image: url(https://66.media.tumblr.com/1b897b81d1d11a5ea930a989d2a26ff6/tumblr_otkaaxMx821tm7xnjo1_r1_1280.png); background-size: cover;}
+	.hero-text h1:nth-child(2):hover ~ .hero-image { background-image: url(https://66.media.tumblr.com/75fb4140d41cc9e77c24dd6e4f4dc245/tumblr_p3lju0tpj91tm7xnjo1_r1_1280.jpg);background-size:cover;}
+	.hero-text h1:nth-child(3):hover ~ .hero-image {background-image: url(https://66.media.tumblr.com/2b6dea0e6181ef431b526f8c7c05af7f/tumblr_oqbr0hzLYP1tm7xnjo1_1280.jpg);background-size:cover;}
+	.hero-text h1:nth-child(4):hover ~ .hero-image {background-image: url(https://66.media.tumblr.com/e772a728510f707e6d0bff61476004d0/tumblr_pm9fpj38bc1tm7xnjo1_1280.png);background-size:cover;}
+	.hero-text h1:nth-child(5):hover ~ .hero-image {background-image: url(https://66.media.tumblr.com/bf1388f67f481b96d1f15d3edbda646b/tumblr_p1w0924NWX1tm7xnjo1_1280.gif);background-size:cover;}
+	
+	
+	#cross {display:block;position: absolute;top:36em;left:5%;z-index:-2;}
+	.cross {background: #ff9933;height:80px;position:relative;width:5px;}
+	.cross:after {background:#ff9933;content:"";height:5px;left:-35px;position:absolute;top:35px;width:80px;}
+	#corner {display:block;position:absolute;top:3.5em;right:5%;z-index:-2;}
+	.corner {background: #ff9933;height: 39px;position: relative;width: 5px;}
+	.corner:after {background:#ff9933;content:"";height:5px;left:-35px;position:absolute;top:0px;width:39px;}
+	
+	#blink {-webkit-animation: blink 1s infinite;animation: blink 1s infinite;display:inline-block;}
+	#blink_two {-webkit-animation: blinktwo 1s infinite;animation: blinktwo 1s infinite;display:inline-block;}
+	@keyframes blink {0% {opacity: 1;}1% {opacity: 0;}49% {opacity: 1;}50% {opacity: 0;}}
+    @keyframes blinktwo {0% {opacity: 1;}}1% {opacity: 0;}49% {opacity: 1;}50% {opacity: 0;};}}
+
+	
+	
+    footer {
+		position: relative;
+		bottom: 0px;
+        width:80%;
+		padding: 1em 10% 0em 10%;
+		display:inline-block;
+		margin-top:5em 5% 0em 5%;
+		text-align: center;
+	}
+	footer h2 {
+		font-size: 2em;
+		text-align: center;
+	}
+	footer a:hover {
+	    text-decoration: none;
+        background: #ff9933;
+        opacity:0.9;
+        color: #FFFFFF;
+        white-space: pre-wrap;
+        padding-left:.1em;
+        padding-right:.1em;
+        box-decoration-break: clone;
+		
+	}
+	
+	/* - Project Gallery END - */
+	section {
+		width: 100%;
+		margin: .5em 0em .5em 0em;
+		display: inline-block;
+		
+		/* - Posible effect to add later
+		position: sticky;
+		position: -webkit-sticky;
+		top:10em;
+		Posible effect to add later - */
+	}
+
+	.title {
+		width: 90%;
+		height: 3.2em;
+		padding: .1em 5% .1em 5%;
+		margin: 0em;
+		background-color: #f9f9f9;
+		font-size: 2em;
+		position: sticky;
+		position: -webkit-sticky;
+		top:0px;
+	}
+	.dots {
+		width: 80%;
+		position: relative;
+		z-index: -2;
+		height: auto;
+		padding: .3em 2% .3em 2%;
+		margin: 0em 12% 0em 8%;
+ 		background: url(https://static.tumblr.com/i0wttqk/tmDp6uwmw/artboard_1_3x.png) repeat;
+	    background-size:20%;
+	}
+	.out-line-box {
+		width: 55%;
+		padding: 2em 45% 1em 1em;
+		outline: #ff9933 solid 4px;
+	}
+	.out-line-box-right {
+		width: 55%;
+		padding: 1em 1em 1em 45%;
+		outline: #ff9933 solid 4px;
+	}
+	.out-line-box:hover, .out-line-box-right:hover {
+		outline: #ff9933 solid 12px;
+	}
+	.out-line-box h1, .out-line-box-right h1 {
+		font-size: 46pt;
+		margin-top: .1em;
+		margin-bottom: .1em;
+	}
+	.out-line-box p , .out-line-box-right p{
+		position: relative;
+		font-size: 16pt;
+		border-bottom: 4px #ff9933 solid;
+	}
+	.project-image-right, .project-image-left {
+		position: relative;
+		z-index: -1;
+		width: 50%;
+		height: 26em;
+		background-size: cover;
+		background-position: left;
+	}
+	.project-image-right {
+		transform: translate(0%, -90%);
+		float: right;
+	}
+	.project-image-left {
+		transform: translate(3%, -90%);
+		float: left;
+	}
+	.project-image-right:hover, .project-image-left:hover {
+		width: 97%;
+	}
+	/* - Project Gallery END - */
+	
+	/* | AT MEDIA | */
+	
+	
+	/* | LARG (Ipad) | */
+	@media (max-width: 1000px) {
+		header h1 {
+			font-size: 80pt;
+		}
+		#hero-box {
+			height: 27em;
+		}
+		.hero-image {
+			height: 27em;
+		}
+		#cross {
+			top:31em
+		}
+	}
+	/* | MIDEIM (Ipad Mini) | */
+	@media (min-width: 450px)and (max-width: 900px) {
+		header h1 {
+			font-size: 50pt;
+		}
+		header {
+			padding-top: 8em;
+		}
+		#hero-box {
+			height: 17em;
+			top:7em;
+		}
+		.hero-image {
+			height: 17em;
+			top:7em;
+		}
+		#cross {
+			top:23em;
+		}
+		.out-line-box h1, .out-line-box-right h1 {
+		font-size: 36pt;
+	}
+	}
+	/* | SMALL (phone) | */
+	@media (min-width: 388px)and (max-width: 490px) {
+		header h1 {
+			font-size: 28pt;
+			margin-top: -.5em;
+		}
+		header {
+			padding-top: 8em;
+		}
+		#hero-box {
+			height: 16em;
+			top:8em;
+		}
+		.hero-image {
+			height: 16em;
+			top:8em;
+		}
+		#cross {
+			display: none;
+		}
+		#corner {
+			display: none;
+		}
+		.out-line-box h1, .out-line-box-right h1 {
+		font-size: 30pt;
+	}
+	}
+	/* | EXTRA SMALL (small phone) | */
+	@media (max-width: 388px) {
+		header h1 {
+			font-size: 28pt;
+			margin-top: -.4em;
+		}
+		header {
+			padding-top: 9em;
+		}
+		.out-line-box h1, .out-line-box-right h1 {
+		font-size: 26pt;
+	}
+	}
+</style>
+<body>
+	<script>
+		fitText(document.querySelector("h1"), 0.38);
+	</script>
+	<nav>
+		<div id="navbox"></div>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&#x2715;</a>
+  		<a href="/home" class="nav">_Home</a>
+  		    <div class="dropdown">
+  		</div>
+  		    <div class="dropdown">
+  		<a href="#work">_Work</a>
+  		     <div class="dropdown-content" onclick="display=block">
+  		        <a href="/tagged/graphic">_Graphic</a>
+  		        <a href="/tagged/typography">_Typography</a>
+  		        <a href="/tagged/Illustration">_Illustation</a>
+  		        <a href="tagged/photography">_Photography</a>
+  		    </div>
+  		</div>
+  		<a href="/about">_About Me</a>
+  		<a href="mailto:barnardmatthew92@gmail.com?subject=_Hello&amp;body=type%20your%20messages%20here">_Email</a>
+  		<div id="socal_links">
+  		    <a href="https://www.behance.net/matthew_barnard"><i class="fa fa-behance" target="new"></i></a>
+        <a href="https://twitter.com/barnard652" target="new"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/matt652/" target="new"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/matthew-barnard-4bb531b9/" target="new"><i class="fa fa-linkedin"></i></a>
+  		</div>
+	</div>
+	<div id="nav_burger">
+	    <span style="font-size:28px;cursor:pointer;color:{TitleColor};font-family: {TitleFont};font-weight: {TitleFontWeight};" onclick="openNav()"><a>&#9776;</a></span>
+    </div>
+
+	  <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+		</script>
+	</nav>
+		<header class="hero-text">
+			<h1><div id="blink">_</div>HI, I'm a;</h1>
+			<h1><a href="/home" class="graphic">Graphic Designer,</a></h1>
+			<h1><a href="/home">Typographer,</a></h1>
+			<h1><a href="/home">Website Designer</a></h1>
+			<h1><a href="/home">and Creative</a></h1>
+		<div id="hero-box"></div>
+		<div class="hero-image"></div>
+	</header>
+	<div id="cross">
+		<div class="cross"></div>
+	</div>
+	<div id="corner">
+		<div class="corner"></div>
+	</div>
+	<div id="work"></div>
+<section class="title" style="margin-bottom: 4em;">
+		<h1>Veiw Project</h1>
+	</section>
+	<section>
+		<a href="/prh">
+		<div class="dots">
+				<div class="out-line-box">
+					<h1>_IN COLD BLOOD, 2017 SHORTLIST COVER DESIGN.</h1>
+					<p>Photoshop, InDesign, Book Cover Design, Type Design, Hand Lettering.</p>
+				</div>
+			<div class="project-image-right" style="background-image: url(https://66.media.tumblr.com/2b6dea0e6181ef431b526f8c7c05af7f/tumblr_oqbr0hzLYP1tm7xnjo1_1280.jpg);"></div>
+		</div>
+		</a>
+	</section>
+	
+	<section>
+		<a href="/omfse">
+		<div class="dots">
+			<div class="out-line-box-right">
+				<h1 style="text-align: right;">_OPERATING MANUAL FOR SPACESHIP EARTH. BOOK DESIGN</h1>
+				<p style="text-align:right;">Skills used; Photoshop, InDesign, Illustrator, Type Design, Book Design, Editorial Design.</p>
+			</div>
+			<div class="project-image-left" style="background-image: url(https://66.media.tumblr.com/2214d04c3645e037a93cfd44abb08080/tumblr_oq5xh6dprb1tm7xnjo2_r1_1280.jpg);background-position: right;"></div>
+			
+		</div>
+		</a>
+	</section>
+	
+	<section>
+		<a href="/douet">
+		<div class="dots">
+			<div class="out-line-box">
+				<h1>_THE DESIGN OF USEING EVERYDAY THINGS. UNI DISATATION.</h1>
+				<p>Illustrator, InDesign, Book Cover Design, Editorial, Essay Writing.</p>
+			</div>
+			<div class="project-image-right" style="background-image: url(https://78.media.tumblr.com/f6e4a607f83e458032303763ca83723a/tumblr_om700tkCWK1tm7xnjo1_1280.png);"></div>
+		</div>
+		</a>
+	</section>
+	
+	<section>
+		<a href="/mg">
+		<div class="dots">
+			<div class="out-line-box-right">
+				<h1 style="text-align: right;">_MOTION GRAPHICS, HIPSTER WALKING.</h1>
+				<p style="text-align:right;">Illustrator, After Effect, Character Design.</p>
+			</div>
+			<div class="project-image-left" style="background-image: url(https://78.media.tumblr.com/bf1388f67f481b96d1f15d3edbda646b/tumblr_p1w0924NWX1tm7xnjo1_1280.gif);"></div>		
+		</div>
+		</a>
+	</section>
+	
+	<section>
+		<a href="/icons">
+		<div class="dots">
+			<div class="out-line-box">
+				<h1>_ICON SET FOR INVOICING SOFTWEAR & POSTER DESIGN.</h1>
+				<p>Illustrator, InDesign, Poster Design, UI.</p>
+			</div>
+			<div class="project-image-right" style="background-image: url(https://78.media.tumblr.com/3c5cfdb1b0640b5c72f71de155c6d056/tumblr_p3lju0tpj91tm7xnjo1_1280.jpg);background-position: center;"></div>
+		</div>
+		</a>
+	</section>
+	
+	<section>
+		<a href="/dp">
+		<div class="dots">
+			<div class="out-line-box-right">
+				<h1 style="text-align: right;">_DARK PLACES, ILLUSTATIONS.</h1>
+				<p style="text-align:right;">Illustrator, Dawing, Sketbook Work.</p>
+			</div>
+			
+			<div class="project-image-left" style="background-image: url(https://66.media.tumblr.com/e61a1bb95299537e8b403625a881ef36/tumblr_pdd3b2ko511tm7xnjo1_1280.jpg);"></div>
+		</div>
+		</a>
+	</section>
+    <footer>
+		<h2>
+			<div id="blink_two">_</div>WANT TO SEE A MY <a href="https://www.dropbox.com/sh/ji0wtpdw1h002iq/AAAWzov9gn7579ofpy-TE-8Qa?dl=0" target="new">PORTFOLIO?</a>
+		</h2>
+	</footer>
+</body>
+</html>
