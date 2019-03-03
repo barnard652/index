@@ -2,7 +2,7 @@
 	/*  - This is designed for all pages for the naviation slide out -  */
     #nav_burger{
         text-align:left;
-        color:{titlecolor};
+        color:#444444;
         z-index:2;
         position:fixed;
         top:2em;
@@ -10,29 +10,29 @@
         
     }
     #nav_burger:hover {
-        color:#ffffff;
+        color:#ff9933;
     }
 	.sidenav {
     	height: 100%;
     	width: 0em;
-		margin:0em;
+	margin:0em;
     	position: fixed;
     	z-index: 999;
     	top: 0;
     	left: 0;
     	text-align:left;
-		background-color: #FFFFFF;
+	background-color: #FFFFFF;
     	overflow-x: hidden;
     	transition: 0.5s;
     	padding-top: 60px;
     	display:block;
 	}
 	.sidenav a {
-		margin: 0em;
+	margin: 0em;
     	padding: 8px 8px 8px 32px;
     	text-decoration: none;
     	font-size: 30pt;
-    	color: {AccentColor};
+    	color: #444444;
     	display: block;
     	transition: 0.3s
 	}
@@ -47,20 +47,20 @@
     	top: -0.8em;
     	right: .1em;
     	font-size: 30pt;
-		position: relative;
+	position: relative;
         text-align:left;
 	}
 	a .closebtn:hover {
-	    background-color{backgroundColor};
+	background-color:#ff9933;
 	}
 	.dropdown {
 	    
 	}
 	.dropdown-content {
-	    display: none;
-	    width:96%;
-	    font-size:15pt;
-	    line-height:1em;
+	display: none;
+	width:96%;
+	font-size:15pt;
+	line-height:1em;
         padding: 2%;
         padding-top:.5em;
         padding-bottom:.5em;
@@ -69,22 +69,21 @@
     .dropdown-content a {
         font-size:1.2em;
         margin:-0.5em;
-        color:{AccentColor};
+        color:#444444;
     }
     
     .dropdown:hover .dropdown-content {
         display: block;
     }
     .dropdown-content a: {
-        color: {AccentColor} ;
+        color:#444444;
     }
     a .fa {
     	font-size:22pt;
         margin:.7em;
-        color:{AccentColor};
+        color:#444444;
         display:inline;
     }
     a:hover .fa {
-    	color:{BackgroundColor};
+    	color:#ff9933;
     }
-	/*NAV END*/
