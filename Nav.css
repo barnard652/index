@@ -89,12 +89,19 @@ nav {
     .dropdown-content a: {
         color:#444444;
     }
-    a .fa {
+	#socal_links {
+	    float:right;
+	    display:inline;
+	    position:absolute;
+	    bottom:6em;
+	    right:1em;
+	}
+	a .fa {
     	font-size:22pt;
         margin:.7em;
+        display:inline-block;
         color:#444444;
-        display:inline;
     }
     a:hover .fa {
-    	color:#ff9933;
+    	color: #ec6b2d;
     }
