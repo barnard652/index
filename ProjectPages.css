@@ -11,6 +11,7 @@ body {
 }
 #header {
 	padding:3%;
+	padding-bottom:6%;
 	width:94%;
 	color:#444444;
 	font-weight: 800;
@@ -20,6 +21,7 @@ body {
 	position: fixed;
 	top: 0;
 	transition: 0.2s;
+	background: #ff9933;
 }
 h2 a:hover {
 	text-decoration: none;
@@ -76,6 +78,9 @@ section {
 	margin:0em;
 	margin-top:2em;
 	display:inline-block;
+}
+#skild-section {
+	margin-top:95vh;
 }
 .paragraph {
 	display:inline-block;
