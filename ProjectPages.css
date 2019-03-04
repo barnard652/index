@@ -15,7 +15,7 @@ body {
 	color:#444444;
 	font-weight: 800;
 	line-height: 1em;
-	font-size: 70pt;
+	font-size: 75pt;
 	text-decoration: none;
 	position: fixed;
 	top: 0;
@@ -89,7 +89,7 @@ section {
 	display:inline-block;
 	position: -webkit-sticky; /* Safari */
         position: sticky;
-        top: 50px;
+        top: 200px;
         z-index:-999;
 }
 .img {
