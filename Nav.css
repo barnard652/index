@@ -1,6 +1,17 @@
 @charset "UTF-8";
 	/*  - This is designed for all pages for the naviation slide out -  */
-    #nav_burger{
+
+nav {
+	width:3.5em;
+	height:3.2em;
+	position:fixed;
+        top:1.7em;
+        right:0em;
+	display: inline-block;
+	float: right;
+	color: #444444;
+}	
+#nav_burger{
         text-align:left;
         color:#444444;
         z-index:2;
