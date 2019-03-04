@@ -10,18 +10,17 @@ body {
 	background:#f9f9f9;
 }
 #header {
-	padding:3%;
-	padding-bottom:6%;
+	padding:3%, 30px, 3%, 35px;
 	width:94%;
 	color:#444444;
 	font-weight: 800;
 	line-height: 1em;
-	font-size: 75pt;
+	font-size: 70pt;
 	text-decoration: none;
 	position: fixed;
 	top: 0;
 	transition: 0.2s;
-	background: #ff9933;
+	background: #f9f9f9;
 }
 h2 a:hover {
 	text-decoration: none;
@@ -80,7 +79,7 @@ section {
 	display:inline-block;
 }
 #skild-section {
-	margin-top:95vh;
+	margin-top:85vh;
 }
 .paragraph {
 	display:inline-block;
