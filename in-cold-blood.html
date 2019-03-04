@@ -70,23 +70,35 @@ function closeNav() {
 }
 		</script>
 	</nav>
-	<div class="background_block"></div>
-		<div class="description">
-			<div id="blink">_</div>PROJECT:<br/>IN COLD BLOOD, 2017 SHORTLIST COVER DESIGN.
-		</div>
-		<section style="padding-top:5em;">
-		    <h1 style="font-size:40pt;text-alignment:justify;">Skills used; Photoshop, InDesign, Book Cover Design, Type Design, Hand Lettering.</h1>
-		</section>
-		<section>
-		    <h1 style="font-size:40pt;">About The Project</h1>
-		   <div class="paragraph"><p>For the design of this Non-fiction classic, the concept is based on the belief and the character’s religion, as in my opinion this shapes the characters and the overall message; ‘thou shalt not kill’. As the characters are mainly Christian, this is the sixth commandment, repeated 6 times for the six people who died in the book. This also represents 666 for the devil, whom many people thought the murderers were. As for the overall look of the cover, this comes from both the story and ‘Bastille Four Walls’, which is based on Perry Smith who is one of the characters in the book. This particular song helps me to form an emotional understanding of Perry Smith and what his story was, as well as helping me to understand the book overall. A line in the book that particularly helped me was “Now we’re faced with two wrongs” which to me sums up the book as a whole.</p></div>
-		   <img class="img" src="https://78.media.tumblr.com/2b6dea0e6181ef431b526f8c7c05af7f/tumblr_oqbr0hzLYP1tm7xnjo1_1280.jpg"/>
-		</section>
-		<section style="padding-top:2em;padding-bottom:2em;">
-		    <h2 style="font-size:40pt;text-alignment:justify;">Other Projects;
-		    <a href="/omfse">Operating Manual For Spaceship Earth,</a>
-		    <a href="/jms">Just Make Stuff.</a></h2>
-		</section>
+	<div id="header">
+		<div id="blink">_</div>PROJECT:<br/>IN COLD BLOOD, 2017 SHORTLIST COVER DESIGN.
+	</div>
+	<script>
+	// When the user scrolls down 50px from the top of the document, resize the header's font size
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	    document.getElementById("header").style.fontSize = "30pt";
+	  } else {
+	    document.getElementById("header").style.fontSize = "75pt";
+	  }
+	}
+	</script>
+	<section style="padding-top:5em;">
+		<h1 style="font-size:40pt;text-alignment:justify;">Skills used; Photoshop, InDesign, Book Cover Design, Type Design, Hand Lettering.</h1>
+	</section>
+	<section>
+		<h1 style="font-size:40pt;">About The Project</h1>
+		<div class="paragraph"><p>For the design of this Non-fiction classic, the concept is based on the belief and the character’s religion, as in my opinion this shapes the characters and the overall message; ‘thou shalt not kill’. As the characters are mainly Christian, this is the sixth commandment, repeated 6 times for the six people who died in the book. This also represents 666 for the devil, whom many people thought the murderers were. As for the overall look of the cover, this comes from both the story and ‘Bastille Four Walls’, which is based on Perry Smith who is one of the characters in the book. This particular song helps me to form an emotional understanding of Perry Smith and what his story was, as well as helping me to understand the book overall. A line in the book that particularly helped me was “Now we’re faced with two wrongs” which to me sums up the book as a whole.</p></div>
+		<img class="img" src="https://78.media.tumblr.com/2b6dea0e6181ef431b526f8c7c05af7f/tumblr_oqbr0hzLYP1tm7xnjo1_1280.jpg"/>
+	</section>
+	<section style="padding-top:2em;padding-bottom:2em;">
+		<h2 style="font-size:40pt;text-alignment:justify;">Other Projects;
+			<a href="/omfse">Operating Manual For Spaceship Earth,</a>
+			<a href="/jms">Just Make Stuff.</a>
+		</h2>
+	</section>
 	<footer>
 		<h2>
 			<div id="blink_two">_</div>WANT TO SEE A MY <a href="https://www.dropbox.com/sh/ji0wtpdw1h002iq/AAAWzov9gn7579ofpy-TE-8Qa?dl=0" target="new">PORTFOLIO?</a>
