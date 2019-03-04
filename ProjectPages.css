@@ -89,7 +89,7 @@ section {
 	display:inline-block;
 	position: -webkit-sticky; /* Safari */
         position: sticky;
-        top: 200px;
+        top: 150px;
         z-index:-999;
 }
 .img {
