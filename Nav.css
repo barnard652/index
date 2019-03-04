@@ -10,6 +10,7 @@ nav {
 	display: inline-block;
 	float: right;
 	color: #444444;
+	z-index:999;
 }	
 #nav_burger{
         text-align:left;
@@ -19,7 +20,7 @@ nav {
         top:2em;
         right:1em; 
 }
-#nav_burger:hover {
+#nav_burger:hover, nav {
         color: #ff9933;
 }
 .sidenav {
