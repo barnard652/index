@@ -17,13 +17,12 @@ nav {
         z-index:2;
         position:fixed;
         top:2em;
-        right:1em;
-        
-    }
-    #nav_burger:hover {
-        color: #ec6b2d;
-    }
-	.sidenav {
+        right:1em; 
+}
+#nav_burger:hover {
+        color: #ff9933;
+}
+.sidenav {
     	height: 100%;
     	width: 0em;
 	margin:0em;
@@ -37,8 +36,8 @@ nav {
     	transition: 0.5s;
     	padding-top: 60px;
     	display:block;
-	}
-	.sidenav a {
+}
+.sidenav a {
 	margin: 0em;
     	padding: 8px 8px 8px 32px;
     	text-decoration: none;
@@ -46,28 +45,24 @@ nav {
     	color: #444444;
     	display: block;
     	transition: 0.3s
-	}
-    .sidenav a:hover {
-        color: #ec6b2d;
+}
+.sidenav a:hover {
+        color: #ff9933;
         -webkit-transition: width .6s;
         transition: width .6s;
         transition: 0.3s
-    }
-	.sidenav .closebtn {
+}
+.sidenav .closebtn {
     	float:right;
     	top: -0.8em;
     	right: .1em;
     	font-size: 30pt;
 	position: relative;
         text-align:left;
-	}
-	a .closebtn:hover {
-	background-color:#ff9933;
-	}
-	.dropdown {
-	    
-	}
-	.dropdown-content {
+}
+a .closebtn:hover { background-color:#ff9933; }
+.dropdown {}
+.dropdown-content {
 	display: none;
 	width:96%;
 	font-size:15pt;
@@ -103,5 +98,5 @@ nav {
         color:#444444;
     }
     a:hover .fa {
-    	color: #ec6b2d;
+    	color: #ff9933;
     }
