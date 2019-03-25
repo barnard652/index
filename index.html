@@ -9,9 +9,10 @@
         <title>Matthew Barnard Designer</title>
         <link rel="shortcut icon" type="image/x-icon" href="http://static.tumblr.com/i0wttqk/prGow8f4d/hi-website.png">
         <meta name="description" content="_Hi, im Matthew Barnard - Graphic Designer and Creative Problem Solver">
-  	<meta name="keywords" content="graphic, graphic, graphics, graphic designer, graphic design, type, typography, illustation, motion graphics, animations, web, Design, Print, Website, UX, ux, ui, UI, Degree, UK, England, designer, editorial, editorial design, Book, Book Covers, penguin random house, penguin random house shortlist, penguin random house shortlist design, word press, WP, HTML, CSS, HTML5, CSS3, Bootstap, Logo, Branding, Logo design, Brading Design, Pilot, Gliding, Glider Pilot, Creative">
+  	<meta name="keywords" content="matthew barnard, graphic, graphic, graphic, graphic design, graphic design, type, typography, illustation, motion graphics, animations, web, Design, Print, Website, UX, ux, ui, UI, Degree, UK, England, designer, editorial, editorial design, Book, Book Covers, penguin random house, penguin random house shortlist, penguin random house shortlist design, word press, WP, HTML, CSS, HTML5, CSS3, Bootstap, Logo, Branding, Logo design, Brading Design, Pilot, Gliding, Glider Pilot, Creative">
   	<meta name="author" content="Matthew Barnard">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="Nav.css" rel="stylesheet" type="text/css">
         <script src="https://use.typekit.net/bfu7lrf.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
             <script>
@@ -19,7 +20,6 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-81747723-2', 'auto');
   ga('send', 'pageview');
 </script> 
@@ -46,83 +46,6 @@
 		color:#444444 ;
 		text-decoration: none;
 	}
-	/*NAV START*/
-	nav {
-	    position:fixed;
-        top:1.7em;
-        right:1em;
-		display: inline-block;
-		float: right;
-		color: #FFFFFF;
-		z-index:999;
-	}
-    #nav_burger{
-        text-align:left;
-        color:{TitleColor};
-        z-index:2;
-        position:fixed;
-        top:2em;
-        right:1em;
-    }
-    #nav_burger:hover {color:#ffffff;}
-	.sidenav {
-    	height: 100%;
-    	width: 0em;
-		margin:0em;
-    	position: fixed;
-    	z-index: 999;
-    	top: 0;
-    	left: 0;
-    	text-align:left;
-		background-color: rgba(255, 255, 255, 1);
-    	overflow-x: hidden;
-    	transition: 0.5s;
-    	padding-top: 60px;
-    	font-family: {AccentColor};
-    	display:block;
-	}
-	.sidenav a {
-		margin: 0em;
-    	padding: 8px 8px 8px 32px;
-    	text-decoration: none;
-    	font-size: 30pt;
-    	color: {AccentColor};
-    	display: block;
-    	transition: 0.3s
-	}
-    .sidenav a:hover {
-        color: {BackgroundColor};
-        -webkit-transition: width .4s;
-        transition: width .4s;
-        transition: 0.4s
-    }
-	.sidenav .closebtn {
-    	float:right;
-    	top: -0.9em;
-    	right: .5em;
-    	font-size: 20pt;
-		position: relative;
-        text-align:left;
-	}
-	a .closebtn:hover {background-color: {BackgroundColor};}
-	.dropdown {}
-	.dropdown-content {
-	    display: none;
-	    width:96%;
-	    font-size:15pt;
-	    line-height:1em;
-        padding: 2%;
-        padding-top:.5em;
-        padding-bottom:.5em;
-        z-index: 1;
-    }
-    .dropdown-content a {font-size:1.2em;margin:-0.5em;color:{color:Text};}
-    .dropdown:hover .dropdown-content {display: block;}
-    .dropdown-content a: {color: {AccentColor} ;}
-	#socal_links {float:right;display:inline;position:absolute;bottom:6em;right:.7em;}
-	a .fa {font-size:22pt;margin:.7em;color:{AccentColor};display:inline;}
-	a:hover .fa {color:{BackgroundColor};}
-	/*NAV END*/
 	::selection {background: #ff9933; color:#FFFFFF;}
 	header {
 		width: 90%;
@@ -195,7 +118,6 @@
 	#blink_two {-webkit-animation: blinktwo 1s infinite;animation: blinktwo 1s infinite;display:inline-block;}
 	@keyframes blink {0% {opacity: 1;}1% {opacity: 0;}49% {opacity: 1;}50% {opacity: 0;}}
     @keyframes blinktwo {0% {opacity: 1;}}1% {opacity: 0;}49% {opacity: 1;}50% {opacity: 0;};}}
-
 	
 	
     footer {
@@ -213,13 +135,13 @@
 	}
 	footer a:hover {
 		text-decoration: none;
-        	background: #ff9933;
-        	opacity:0.9;
-        	color: #FFFFFF;
-        	white-space: pre-wrap;
-        	padding-left:.1em;
-        	padding-right:.1em;
-        	box-decoration-break: clone;
+        background: #ff9933;
+        opacity:0.9;
+        color: #FFFFFF;
+        white-space: pre-wrap;
+        padding-left:.1em;
+        padding-right:.1em;
+        box-decoration-break: clone;
 		
 	}
 	
@@ -235,7 +157,6 @@
 		top:10em;
 		Posible effect to add later - */
 	}
-
 	.title {
 		width: 90%;
 		height: 3.2em;
@@ -420,7 +341,6 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
 }
-
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
