@@ -102,6 +102,11 @@ section {
 	width:40%;
 	margin-top:10px;
 }
+.img-full {
+	width:100%;
+	display:inline-block;
+	float:center;
+}
 footer {
 	position: relative;
 	bottom: 0px;
