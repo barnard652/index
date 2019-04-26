@@ -12,8 +12,8 @@
   border-radius: 50px;
   box-sizing: border-box;
   z-index:-999;
-  -webkit-animation: mouse 12s infinite;
-  animation: mouse 12s infinite;
+  -webkit-animation: mouse 8s infinite;
+  animation: mouse 8s infinite;
 }
 #scroll a span::before {
   position: absolute;
@@ -43,14 +43,14 @@
 }
 @-webkit-keyframes mouse {
   0% {opacity:0;}
-  20% {opacity:1;}
-  60% {opacity:1;}
+  10% {opacity:1;}
+  90% {opacity:1;}
   100% {opacity:0;}
 }
 @keyframes mouse {
   0% {opacity:0;}
-  20% {opacity:1;}
-  60% {opacity:1;}
+  10% {opacity:1;}
+  90% {opacity:1;}
   100% {opacity:0;}
 }
 
