@@ -144,21 +144,22 @@ footer a:hover {
 	/* Small Tablets */
 @media (max-width: 800px) {
         #loading{ background-size:70%; }
-        .background_block {
-	    height: 18em;
-            margin-top: 1.7em;
-            width: 75%;
-            left: 12.5%;
+        	.background_block {
+	    	height: 18em;
+            	margin-top: 1.7em;
+            	width: 75%;
+            	left: 12.5%;
         }
-	    .description{ font-size: 40pt;}
+	.description{ font-size: 40pt;}
         .paragraph {
 	        display:inline-block;
 	        width:90%;
 	        float:left;
 	        position: relative; /* Safari */
-        position: relative;
-        top: 50px;
+        	position: relative;
+        	top: 50px;
 	    }
+	.img, .img-right{ display: None; }
 }
 @media (max-width: 1450px){
 	.description { font-size: 90pt; }
@@ -166,7 +167,7 @@ footer a:hover {
 @media (max-width : 960px ){
 	.description{font-size: 50pt;}
 	.background_block {height: 17.5em; margin-top: 2.3em;}
-	.img, .img-right{ width:100%; }
+	.img, .img-right{ display: None; }
 	.paragraph {
 		display:inline-block;
 		width:100%;
