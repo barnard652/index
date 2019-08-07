@@ -221,7 +221,32 @@
 		.out-line-box h1, .out-line-box-right h1 {
 		font-size: 36pt;
 	}
-	}
+		.background_block {
+		    height: 18em;
+            margin-top: 1.7em;
+            width: 75%;
+            left: 12.5%;
+        }
+	    .description{
+		font-size: 40pt;
+        }
+        .paragraph {
+	        display:inline-block;
+	        width:90%;
+	        float:left;
+	    }
+	    .paragraph_right {
+	        display:inline-block;
+	        width:90%;
+	        float:left;
+	    }
+	    .img{
+	        position:relative;
+	        width:100%;
+	        margin-left:5%;
+	        z-index:-999;
+	    }
+         }
 	/* | SMALL (phone) | */
 	@media (min-width: 388px)and (max-width: 490px) {
 		header h1 {
@@ -243,7 +268,32 @@
 		}
 		.out-line-box h1, .out-line-box-right h1 {
 		font-size: 30pt;
-	}
+		}
+		.description{
+		font-size: 40pt;
+        }
+        .paragraph {
+	        display:inline-block;
+	        width:90%;
+	        float:left;
+	    }
+	    .paragraph_right {
+	        display:inline-block;
+	        width:90%;
+	        float:left;
+	    }
+	    .img{
+	        position:relative;
+	        width:100%;
+	        margin-left:5%;
+	        z-index:-999;
+	    }
+		.coloums {
+	    		webkit-columns: 1;
+        		-moz-columns: 1;
+        		columns: 1;
+        		text-align: center;
+		}
 	}
 	/* | EXTRA SMALL (small phone) | */
 	@media (max-width: 388px) {
@@ -255,8 +305,14 @@
 			padding-top: 9em;
 		}
 		.out-line-box h1, .out-line-box-right h1 {
-		font-size: 26pt;
-	}
+			font-size: 26pt;
+		}
+		.coloums {
+	    		webkit-columns: 1;
+        		-moz-columns: 1;
+        		columns: 1;
+        		text-align: center;
+		}
 	}
 </style>
 <body>
