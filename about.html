@@ -1,19 +1,28 @@
 <!doctype html>
 <html>
 <head>
+	<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135465222-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-135465222-1');
+</script>
+	<!-- Google Analytics -->
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="color:selection" content="#eee"/>
-        <meta name="color:Content Background" content="#fff"/>
-        <meta name="color:Heading text" content=""/>
-        <meta name="color:Text" content="#000"/>
-        <meta name="font:Body" content=""/>
-        <meta name="image:BackgroundOne" content="http://static.tumblr.com/..."/>
-        <meta name="image:BackgroundTwo" content="http://static.tumblr.com/..."/>
-        <title>About Me</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Matthew Barnard Designer</title>
         <link rel="shortcut icon" type="image/x-icon" href="http://static.tumblr.com/i0wttqk/prGow8f4d/hi-website.png">
-        <meta name="description" content="/">
+        <meta name="description" content="_Hi, im Matthew Barnard - Graphic Designer and Creative Problem Solver">
+  	<meta name="keywords" content="matthew barnard, graphic, graphic, graphic, graphic design, graphic design, type, typography, illustation, motion graphics, animations, web, Design, Print, Website, UX, ux, ui, UI, Degree, UK, England, designer, editorial, editorial design, Book, Book Covers, penguin random house, penguin random house shortlist, penguin random house shortlist design, word press, WP, HTML, CSS, HTML5, CSS3, Bootstap, Logo, Branding, Logo design, Brading Design, Pilot, Gliding, Glider Pilot, Creative">
+  	<meta name="author" content="Matthew Barnard">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="Nav.css" rel="stylesheet" type="text/css">
         <script src="https://use.typekit.net/bfu7lrf.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
             <script>
@@ -21,161 +30,123 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-81747723-2', 'auto');
   ga('send', 'pageview');
-
 </script> 
+	
     </head>
+	
 <style>
 	body {
 		width: 100%;
-		padding: auto;
 		margin: 0em;
 		display: inline-block;
 		font-family: "din-condensed", {TitleFont};
-		color:{AccentColor};
+		color: #444444;
 		background:#f9f9f9;
+		scroll-behavior: smooth;
+		overflow-x: hidden;
 	}
-	.background_block {
-	    	width:86%;
-		height: 30em;
-	    	position:absolute;
-	    	margin-top: 3em;
-		left: 5.5%;
-	    	z-index:-999;
-	    	background-image: url(https://static.tumblr.com/i0wttqk/tmDp6uwmw/artboard_1_3x.png);
-	    	background-size:20%;
-	}
-	header {
-	   	width:3.5em;
-	   	height:3.2em;
-	    	position:fixed;
-        	top:1.7em;
-        	right:0em;
-		display: inline-block;
-		float: right;
-		background-color: {BackgroundColor};
-		color: #FFFFFF;
-	}
-	.description{
-	    	margin:2%;
-		color:{AccentColor};
-		font-weight: 800;
-		line-height: 1em;
-		font-size: 90pt;
-		text-decoration: none;
-	}
-	h1 a:hover {
-	    	text-decoration: none;
-        	background: {BackgroundColor};
-        	color: #fff;
-        	display: inline;
-        	white-space: pre-wrap;
-        	padding-left:.1em;
-        	padding-right:.1em;
-        	box-decoration-break: clone;
-        	-webkit-box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
-        	-moz-box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
-        	box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
+	h1 {
+		width: -webkit-fit-content;
+  		width: -moz-fit-content;
+  		width: fit-content;
 	}
 	a {
-	    color:{AccentColor};
+		color:#444444 ;
 		text-decoration: none;
 	}
-	a:hover {
-		color: #FFFFFF;
+	::selection {background: #ff9933; color:#FFFFFF;}
+	header {
+		width: 90%;
+		padding: 5%;
+		padding-top: 7em;
 	}
-	/*BLINK_ANIMTION*/
+	header h1 {
+		margin-top: -.8em;
+		font-size: 90pt;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #444444 ;
+		letter-spacing: .01em;
+	/*header animation START*/
+		-webkit-animation-name: header;-webkit-animation-duration: 0.6s;animation-name: header;animation-duration: header 0.6s;}@-webkit-keyframes header {0% {color: {AccentColor}; font-size:89pt;} 25% { letter-spacing: .01em; text-shadow: 2px 0px 0px rgba(255, 0, 0, 0.8);letter-spacing: -0.2px; font-size:90.5pt;}52% {text-shadow: -2px 0px 0px rgba(0, 255, 0, 0.8); color: {AccentColor}; font-size:90pt;}69% {text-shadow: -2px 0px 0px rgba(0, 0, 255, 0.8); color: #171717; font-size:89pt;}100% {color: {AccentColor};font-size:90pt;}}@keyframes header {0% {color: {AccentColor};letter-spacing: 0em; font-size:90pt;} 25% {letter-spacing: .02em; text-shadow: 2px 0px 0px rgba(255, 0, 0, 0.8);letter-spacing: -0.2px; font-size:91pt;}52% {text-shadow: -2px 0px 0px rgba(0, 255, 0, 0.8); color: #434343; font-size:90pt;}69% {text-shadow: -2px 0px 0px rgba(0, 0, 255, 0.8); color: {AccentColor}; font-size:89pt;}100% {color: {AccentColor};font-size:90pt;}}
+	/*header animation END*/
+	}
+	h1 a:hover {color: #FFFFFF;}
+	header h1 a:hover {
+	    text-decoration: none;
+        background: #ff9933;
+        opacity:1;
+        color: #FFFFFF;
+        white-space: pre-wrap;
+        padding-left:.1em;
+        padding-right:.1em;
+        box-decoration-break: clone;
+		/* BOX SHADOW
+        -webkit-box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
+        -moz-box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
+        box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
+		*/
+	}
+	.hero-image {
+		width:85%;
+		height: 32em;
+	    position: absolute;
+	    top: 4em;
+		left: 6%;
+	    z-index:-99;
+	    background: url(https://static.tumblr.com/i0wttqk/tmDp6uwmw/artboard_1_3x.png);
+	    background-size:20%;
+	    background-position: fixed;
+	}
+
+	
+	
+	#cross {display:block;position: absolute;top:36em;left:5%;z-index:-2;}
+	.cross {background: #ff9933;height:80px;position:relative;width:5px;}
+	.cross:after {background:#ff9933;content:"";height:5px;left:-35px;position:absolute;top:35px;width:80px;}
+	#corner {display:block;position:absolute;top:3.5em;right:5%;z-index:-2;}
+	.corner {background: #ff9933;height: 39px;position: relative;width: 5px;}
+	.corner:after {background:#ff9933;content:"";height:5px;left:-35px;position:absolute;top:0px;width:39px;}
+	
 	#blink {-webkit-animation: blink 1s infinite;animation: blink 1s infinite;display:inline-block;}
 	#blink_two {-webkit-animation: blinktwo 1s infinite;animation: blinktwo 1s infinite;display:inline-block;}
-	@keyframes blink {0% {color:{AccentColor};}1% {color:white;}49% {color:white;}50% {color:{AccentColor};}}
-    @keyframes blinktwo {0% {color:{AccentColor};}1% {color:#ebe2ea;}49% {color:#ebe2ea;}50% {color:{AccentColor};}}
-	/*BLINK_ANIMTION*/
-	/*NAV START*/
-    #nav_burger{
-        text-align:left;
-        color:{titlecolor};
-        z-index:2;
-        position:fixed;
-        top:2em;
-        right:1em;
-        
-    }
-    #nav_burger:hover {
-        color:#ffffff;
-    }
-	.sidenav {
-    	height: 100%;
-    	width: 0em;
-		margin:0em;
-    	position: fixed;
-    	z-index: 999;
-    	top: 0;
-    	left: 0;
-    	text-align:left;
-		background-color: #FFFFFF;
-    	overflow-x: hidden;
-    	transition: 0.5s;
-    	padding-top: 60px;
-    	display:block;
-	}
-	.sidenav a {
-		margin: 0em;
-    	padding: 8px 8px 8px 32px;
-    	text-decoration: none;
-    	font-size: 30pt;
-    	color: {AccentColor};
-    	display: block;
-    	transition: 0.3s
-	}
-    .sidenav a:hover {
-        color: #ec6b2d;
-        -webkit-transition: width .6s;
-        transition: width .6s;
-        transition: 0.3s
-    }
-	.sidenav .closebtn {
-    	float:right;
-    	top: -0.8em;
-    	right: .1em;
-    	font-size: 30pt;
+	@keyframes blink {0% {opacity: 1;}1% {opacity: 0;}49% {opacity: 1;}50% {opacity: 0;}}
+    @keyframes blinktwo {0% {opacity: 1;}}1% {opacity: 0;}49% {opacity: 1;}50% {opacity: 0;};}}
+	
+	
+    footer {
 		position: relative;
-        text-align:left;
+		bottom: 0px;
+        width:80%;
+		padding: 1em 10% 0em 10%;
+		display:inline-block;
+		margin-top:5em 5% 0em 5%;
+		text-align: center;
 	}
-	a .closebtn:hover {
-	    background-color{backgroundColor};
+	footer h2 {
+		font-size: 2em;
+		text-align: center;
 	}
-	.dropdown {
-	    
+	footer a:hover {
+		text-decoration: none;
+        background: #ff9933;
+        opacity:0.9;
+        color: #FFFFFF;
+        white-space: pre-wrap;
+        padding-left:.1em;
+        padding-right:.1em;
+        box-decoration-break: clone;
+		
 	}
-	.dropdown-content {
-	    display: none;
-	    width:96%;
-	    font-size:15pt;
-	    line-height:1em;
-        padding: 2%;
-        padding-top:.5em;
-        padding-bottom:.5em;
-        z-index: 1;
-    }
-    .dropdown-content a {
-        font-size:1.2em;
-        margin:-0.5em;
-        color:{AccentColor};
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    .dropdown-content a: {
-        color: {AccentColor} ;
-    }
-	/*NAV END*/
-	::selection {
-	    background:#ff9933;
-	    color:white;
+	
+	section {
+		width: 100%;
+		margin: .5em 0em .5em 0em;
+		display: inline-block;
 	}
+	
 	section {
 	    width:90%;
 	    padding:5%;
@@ -186,7 +157,7 @@
 	.paragraph {
 	    display:inline-block;
 	    font-size:14pt;
-	    width:40%;
+	    width:47%;
 	    float:left;
 	    z-index:2;
 	}
@@ -213,117 +184,99 @@
         -moz-columns: 2;
         columns: 2;
 	}
-    #New_paper {
-	    width:90%;
-		height: 27em;
-		padding-top:1em;
-		display:inline-block;
-		margin-top:5em;
-		margin-left: 5%;
-	    background-color:{backgroundColor};
-	    background-image: url("http://static.tumblr.com/i0wttqk/Q0roxaq8a/newpaper.jpg;");
-	    background-position:center;
-	    background-size:100%;
+	
+	/* | AT MEDIA | */
+	
+	
+	/* | LARG (Ipad) | */
+	@media (max-width: 1000px) {
+		header h1 {
+			font-size: 80pt;
+		}
+		#hero-box {
+			height: 27em;
+		}
+		.hero-image {
+			height: 27em;
+		}
+		#cross {
+			top:31em
+		}
 	}
-	#socal_links {
-	    float:right;
-	    display:inline;
-	    position:absolute;
-	    bottom:6em;
-	    right:1em;
+	/* | MIDEIM (Ipad Mini) | */
+	@media (min-width: 450px)and (max-width: 900px) {
+		header h1 {
+			font-size: 50pt;
+		}
+		header {
+			padding-top: 8em;
+		}
+		.hero-image {
+			height: 17em;
+			top:7em;
+		}
+		#cross {
+			top:23em;
+		}
+		.out-line-box h1, .out-line-box-right h1 {
+		font-size: 36pt;
 	}
-	a .fa {
-    	font-size:22pt;
-        margin:.7em;
-        display:inline-block;
-        color:{AccentColor};
-    }
-    a:hover .fa {
-    	color:{backgroundColor};
-    }
-        /* Mobile */
-         @media (max-width: 420px) {
-        #loading{
-            background-size:70%;
-        }
-        .background_block {
-		    height: 33.5em;
-            margin-top: 1.7em;
-            width: 70%;
-            left:15%;
-        }
-	    #New_paper {
-	        background-size:150%;
-	    }
-        }
-	/* Small Tablets */
-         @media (max-width: 800px) {
-        #loading{
-            background-size:70%;
-        }
-        .background_block {
-		    height: 18em;
-            margin-top: 1.7em;
-            width: 75%;
-            left: 12.5%;
-        }
-	    .description{
-		font-size: 40pt;
-        }
-        .paragraph {
-	        display:inline-block;
-	        width:90%;
-	        float:left;
-	    }
-	    .paragraph_right {
-	        display:inline-block;
-	        width:90%;
-	        float:left;
-	    }
-	    .img{
-	        position:relative;
-	        width:100%;
-	        margin-left:5%;
-	        z-index:-999;
-	    }
-         }
-@media (max-width: 1450px){
-	.description {
-		font-size: 90pt;
-    }
-}
-@media (max-width : 960px ){
-	.description{
-		font-size: 50pt;
-    }
-	.background_block {
-	    height: 17.5em;
-        margin-top: 2.3em;
-    }
-    .coloums {
-	    webkit-columns: 1;
-        -moz-columns: 1;
-        columns: 1;
-        text-align: center;
-    }
-}
+	}
+	/* | SMALL (phone) | */
+	@media (min-width: 388px)and (max-width: 490px) {
+		header h1 {
+			font-size: 28pt;
+			margin-top: -.5em;
+		}
+		header {
+			padding-top: 8em;
+		}
+		.hero-image {
+			height: 16em;
+			top:8em;
+		}
+		#cross {
+			display: none;
+		}
+		#corner {
+			display: none;
+		}
+		.out-line-box h1, .out-line-box-right h1 {
+		font-size: 30pt;
+	}
+	}
+	/* | EXTRA SMALL (small phone) | */
+	@media (max-width: 388px) {
+		header h1 {
+			font-size: 28pt;
+			margin-top: -.4em;
+		}
+		header {
+			padding-top: 9em;
+		}
+		.out-line-box h1, .out-line-box-right h1 {
+		font-size: 26pt;
+	}
+	}
 </style>
-
 <body>
-	<header>
+	<script>
+		fitText(document.querySelector("h1"), 0.38);
+	</script>
+	<nav>
 		<div id="navbox"></div>
 	<div id="mySidenav" class="sidenav">
   		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&#x2715;</a>
-  		<a href="www.https//:matthew-barnard.com" class="nav">_Home</a>
+  		<a href="/index" class="nav">_Home</a>
   		    <div class="dropdown">
   		</div>
   		    <div class="dropdown">
-  		<a href="{BlogURL}">_Work</a>
+  		<a href="index/#work">_Work</a>
   		     <div class="dropdown-content" onclick="display=block">
-  		        <a href="www.https//:matthew-barnard.tumblr.com/tagged/graphic">_Graphic</a>
-  		        <a href="www.https//:matthew-barnard.tumblr.com/tagged/typography">_Typography</a>
-  		        <a href="www.https//:matthew-barnard.tumblr.com/tagged/Illustration">_Illustation</a>
-  		        <a href="www.https//:matthew-barnard.tumblr.com/tagged/photography">_Photography</a>
+  		        <a href="matthew-barnard.tumblr.com/tagged/graphic">_Graphic</a>
+  		        <a href="matthew-barnard.tumblr.com/tagged/typography">_Typography</a>
+  		        <a href="matthew-barnard.tumblr.com/tagged/Illustration">_Illustation</a>
+  		        <a href="matthew-barnard.tumblr.comtagged/photography">_Photography</a>
   		    </div>
   		</div>
   		<a href="/about">_About Me</a>
@@ -333,7 +286,7 @@
         <a href="https://twitter.com/barnard652" target="new"><i class="fa fa-twitter"></i></a>
         <a href="https://www.instagram.com/matt652/" target="new"><i class="fa fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/matthew-barnard-4bb531b9/" target="new"><i class="fa fa-linkedin"></i></a>
-        </div>
+  		</div>
 	</div>
 	<div id="nav_burger">
 	    <span style="font-size:28px;cursor:pointer;color:{TitleColor};font-family: {TitleFont};font-weight: {TitleFontWeight};" onclick="openNav()"><a>&#9776;</a></span>
@@ -343,17 +296,23 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
 }
-
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 		</script>
+	</nav>
+		<header class="hero-text">
+			<h1><a href="/home" class="graphic"><div id="blink">_</div>HI, I’M MATTHEW A GRAPHIC DESIGNER WITH A STORY TO TELL USING DESIGN and Creativity</a></h1>
+		<div class="hero-image"></div>
 	</header>
-	<div class="background_block"></div>
-<div class="description">
-  <div id="blink">_</div>
-			HI, I’M<br>MATTHEW BARNARD;<br>AN AWARD WINNING<br>GRAPHIC DESIGNER<br>FROM THE MIDLANDS. </div>
-		<section>
+	<div id="cross">
+		<div class="cross"></div>
+	</div>
+	<div id="corner">
+		<div class="corner"></div>
+	</div>
+	
+	<section>
 		    <h1 style="font-size:40pt;">Background</h1>
 		   <div class="paragraph"><p>
 Hi, my name is Matthew Barnard, a 22-year-old multi-disciplined designer based in the UK. My experience ranges from Digital designs such as UI/UX Design, Web Design and Motion Graphics to Branding, Type design and Front-End Development with a well-recognised background in Print formats such as Book Cover and Edital design. Demonstrated by being a shortlisted for Penguin Random House student design awards 2018 and receiving a Commendation from the University of Northampton for my achievements.  <br/>
@@ -362,23 +321,13 @@ After leaving university I went to work into a digital agency where I work on pr
 <br/>
 As a Designer, I believe that design can change the world and solve real-world problems. I have a passion for learning new skills, designing visual languages, solving complex problems using narrative and storytelling in my design, believing in creating meaningful and emotional reactions using graphics for the better.  <br/>
  <br/>
-My passion for design is shown by my first class Hons degree in BA Hons Graphic Communication and the drive to complete a Master Degree in the future to expand my skills and knowledge in this fascinating area. <br/>
- <br/>
-Outside of the studio, you can find me at the airfield where I fly gliders from Buckminster Gliding Club where I am building my skill as a Pilot, both flying Glider and Motor Glider.
-		        <div class="img" style="display:none;"></div>
+My passion for design is shown by my first class Hons degree in BA Hons Graphic Communication and the drive to complete a Master Degree in the future to expand my skills and knowledge in this fascinating area.Outside of the studio, you can find me at the airfield where I fly gliders from Buckminster Gliding Club where I am building my skill as a Pilot, both flying Glider and Motor Glider.
 		    </div>
-		    <div class="paragraph_right">Skills: Time management, Judgement and decision making, Complex problem solving, Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Adobe Dreamweaver, Adobe Xd, Adobe Animate, Adobe Aftereffects, HTML5, CSS3, Photography, BirdFont</div>
+		    <div class="paragraph_right">Skills: Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Adobe Dreamweaver, Adobe Xd, Adobe Animate, Adobe Aftereffects, HTML5, CSS3, Photography, BirdFont</div>
 		</section>
 		<section style="padding-top:10em;">
-		    <h1 style="font-size:40pt;text-alignment:justify;">Education:<br/>The University of Northampton - 2013 to 2016
-		    <br/>
-		    FRIST CLASS HONES DEGREE in Graphic Communications
-		    <h1/>
-		    <h1 style="font-size:40pt;text-alignment:justify;">
-		    Grantham College - 2012 to 2014
-		    <br/>
-		    DMM in Level 3 Diploma BTEC Extended Diploma Digital Design and Graphics 
-		    </h1>
+		    <h1 style="font-size:40pt;text-alignment:justify;">Education:<br/><br/><stong>The University of Northampton</stong> - 2013 to 2016<br/>FRIST CLASS HONES DEGREE in Graphic Communications<br/><br/><strong>Grantham College</strong> - 2012 to 2014<br/>DMM in Level 3 Diploma BTEC Extended Diploma Digital Design and Graphics
+			</h1>
 		</section>
 		<section>
 		    <h1 style="font-size:40pt;">Awards</h1>
@@ -396,5 +345,11 @@ Outside of the studio, you can find me at the airfield where I fly gliders from 
 		        </div>
 		        <h1>Other Awards Are; A Commendation From YCN, Northampton Music Festival 2016 In cooperation with The University of Northampton, Grantham College Student of The Year 2014 and End of Year Show Branding at Grantham College.</h1>
 		</section>    
+	
+    <footer>
+		<h2>
+			<div id="blink_two">_</div>WANT TO SEE A MY <a href="https://www.dropbox.com/sh/ji0wtpdw1h002iq/AAAWzov9gn7579ofpy-TE-8Qa?dl=0" target="new">PORTFOLIO?</a>
+		</h2>
+	</footer>
 </body>
 </html>
