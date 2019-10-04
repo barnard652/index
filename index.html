@@ -222,12 +222,14 @@
 	.project-image-right {
 		transform: translate(0%, -90%);
 		float: right;
+		transition: width .2s;
 	}
 	.project-image-left {
 		transform: translate(3%, -90%);
 		float: left;
+		transition: width .2s;
 	}
-	.project-image-right:hover, .project-image-left:hover {
+	a:hover .project-image-left, a:hover .project-image-right {
 		width: 97%;
 	}
 	/* - Project Gallery END - */
