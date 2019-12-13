@@ -76,19 +76,14 @@
 	}
 	h1 a:hover {color: #FFFFFF;}
 	header h1 a:hover {
-	    	text-decoration: none;
-        	background: #ff9933;
-        	opacity:1;
-        	color: #FFFFFF;
-        	white-space: pre-wrap;
-        	padding-left:.1em;
-        	padding-right:.1em;
-        	box-decoration-break: clone;
-	/* BOX SHADOW
-        	-webkit-box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
-        	-moz-box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
-        	box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
-	*/
+	    text-decoration: none;
+        background: #ff9933;
+        opacity:1;
+        color: #FFFFFF;
+        white-space: pre-wrap;
+        padding-left:.1em;
+        padding-right:.1em;
+        box-decoration-break: clone;
 	}
 	#hero-box{
 		width: 85%;
@@ -103,13 +98,13 @@
 	.hero-image {
 		width:85%;
 		height: 32em;
-	    	position: absolute;
-	    	top: 4em;
+	    position: absolute;
+	    top: 4em;
 		left: 6%;
-	    	z-index:-99;
-	    	background: url(https://static.tumblr.com/i0wttqk/tmDp6uwmw/artboard_1_3x.png);
-	    	background-size:20%;
-	    	background-position: fixed;
+	    z-index:-99;
+	    background: url(https://static.tumblr.com/i0wttqk/tmDp6uwmw/artboard_1_3x.png);
+	    background-size:20%;
+	    background-position: fixed;
 	}
 	.hero-text h1:first-child:hover ~ .hero-image { background-image: url(https://66.media.tumblr.com/1b897b81d1d11a5ea930a989d2a26ff6/tumblr_otkaaxMx821tm7xnjo1_r1_1280.png); background-size: cover;}
 	.hero-text h1:nth-child(2):hover ~ .hero-image { background-image: url(https://66.media.tumblr.com/75fb4140d41cc9e77c24dd6e4f4dc245/tumblr_p3lju0tpj91tm7xnjo1_r1_1280.jpg);background-size:cover;}
@@ -146,13 +141,13 @@
 	}
 	footer a:hover {
 		text-decoration: none;
-        	background: #ff9933;
-        	opacity:0.9;
-        	color: #FFFFFF;
-        	white-space: pre-wrap;
-        	padding-left:.1em;
-        	padding-right:.1em;
-        	box-decoration-break: clone;
+        background: #ff9933;
+        opacity:0.9;
+        color: #FFFFFF;
+        white-space: pre-wrap;
+        padding-left:.1em;
+        padding-right:.1em;
+        box-decoration-break: clone;
 		
 	}
 	
@@ -181,7 +176,7 @@
 		padding: .3em 2% .3em 2%;
 		margin: 0em 12% 0em 8%;
  		background: url(https://static.tumblr.com/i0wttqk/tmDp6uwmw/artboard_1_3x.png) repeat;
-	    	background-size:20%;
+	    background-size:20%;
 	}
 	.out-line-box {
 		width: 55%;
@@ -218,7 +213,6 @@
 		transform: translate(0%, -90%);
 		float: right;
 		transition: width .2s;
-		text-align: right;
 	}
 	.project-image-left {
 		transform: translate(3%, -90%);
@@ -231,19 +225,18 @@
 	a:hover h1 {
 		color: #FFFFFF;
 		text-decoration: none;
-        	background: #ff9933;
-        	white-space: pre-wrap;
-        	padding-left:.1em;
-        	padding-right:.1em;
+        background: #ff9933;
+        white-space: pre-wrap;
+        padding-left:.1em;
+        padding-right:.1em;
 		display:inline;
-        	box-decoration-break: clone;
+        box-decoration-break: clone;
 	}
 	a:hover p {
 		color:#FFFFFF;
 	}
 	a:hover .project-image-left p {
 		color:#FFFFFF;
-		text-align: left;
 	}
 	/* - Project Gallery END - */
 	
@@ -329,6 +322,14 @@
 	}
 	}
 </style>
+	<script>
+		const el = document.querySelector("#module");
+
+el.addEventListener("mousemove", (e) => {
+  el.style.backgroundPositionX = -e.offsetX + "px";
+  el.style.backgroundPositionY = -e.offsetY + "px";
+});
+	</script>
 <body>
 	<script>
 		fitText(document.querySelector("h1"), 0.38);
@@ -397,7 +398,7 @@ function closeNav() {
 					<h1>_IN COLD BLOOD, 2017 SHORTLIST COVER DESIGN.</h1>
 					<p>Photoshop, InDesign, Book Cover Design, Type Design, Hand Lettering.</p>
 				</div>
-			<div class="project-image-right" style="background-image: url(https://66.media.tumblr.com/2b6dea0e6181ef431b526f8c7c05af7f/tumblr_oqbr0hzLYP1tm7xnjo1_1280.jpg);"></div>
+			<div class="module" id="module" class="project-image-right" style="background-image: url(https://66.media.tumblr.com/2b6dea0e6181ef431b526f8c7c05af7f/tumblr_oqbr0hzLYP1tm7xnjo1_1280.jpg);"></div>
 		</div>
 		</a>
 	</section>
