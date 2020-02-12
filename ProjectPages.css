@@ -84,6 +84,7 @@ section {
 .paragraph {
 	display:inline-block;
 	font-size:14pt;
+	font-family: 'Open Sans', sans-serif;
 	width:40%;
 	float:right;
 	display:inline-block;
@@ -92,6 +93,7 @@ section {
         top: 150px;
         z-index:-999;
 }
+p {font-family: 'Open Sans', sans-serif;}
 .img {
 	width:55%;
 	display:inline-block;
