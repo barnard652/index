@@ -16,7 +16,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="color:selection" content="#eee"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Matthew Barnard Designer</title>
+        <title>A b o u t  M e</title>
         <link rel="shortcut icon" type="image/x-icon" href="http://static.tumblr.com/i0wttqk/prGow8f4d/hi-website.png">
         <meta name="description" content="_Hi, im Matthew Barnard - Graphic Designer and Creative Problem Solver">
   	<meta name="keywords" content="matthew barnard, graphic, graphic, graphic, graphic design, graphic design, type, typography, illustation, motion graphics, animations, web, Design, Print, Website, UX, ux, ui, UI, Degree, UK, England, designer, editorial, editorial design, Book, Book Covers, penguin random house, penguin random house shortlist, penguin random house shortlist design, word press, WP, HTML, CSS, HTML5, CSS3, Bootstap, Logo, Branding, Logo design, Brading Design, Pilot, Gliding, Glider Pilot, Creative">
@@ -47,72 +47,11 @@
 		scroll-behavior: smooth;
 		overflow-x: hidden;
 	}
-	h1 {
-		width: -webkit-fit-content;
-  		width: -moz-fit-content;
-  		width: fit-content;
-	}
 	a {
 		color:#444444 ;
 		text-decoration: none;
 	}
 	::selection {background: #ff9933; color:#FFFFFF;}
-	header {
-		width: 90%;
-		padding: 5%;
-		padding-top: 7em;
-	}
-	header h1 {
-		margin-top:0em;
-		font-size: 90pt;
-		font-weight: 400;
-		text-transform: uppercase;
-		color: #444444 ;
-		letter-spacing: -.05em;
-	}
-	h1 a:hover {color: #FFFFFF;}
-	header h1 a:hover {
-	    text-decoration: none;
-        background: #ff9933;
-        opacity:1;
-        color: #FFFFFF;
-        white-space: pre-wrap;
-        padding-left:.1em;
-        padding-right:.1em;
-        box-decoration-break: clone;
-		/* BOX SHADOW
-        -webkit-box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
-        -moz-box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
-        box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.22);
-		*/
-	}
-	.hero-image {
-		width:85%;
-		height: 32em;
-	    position: absolute;
-	    top: 4em;
-		left: 6%;
-	    z-index:-99;
-	    background: url(https://static.tumblr.com/i0wttqk/tmDp6uwmw/artboard_1_3x.png);
-	    background-size:20%;
-	    background-position: fixed;
-	}
-
-	/* | \/ CORNER DECORATION \/ | */
-	
-	#cross {display:block;position: absolute;top:36em;left:5%;z-index:-2;}
-	.cross {background: #ff9933;height:80px;position:relative;width:5px;}
-	.cross:after {background:#ff9933;content:"";height:5px;left:-35px;position:absolute;top:35px;width:80px;}
-	#corner {display:block;position:absolute;top:3.5em;right:5%;z-index:-2;}
-	.corner {background: #ff9933;height: 39px;position: relative;width: 5px;}
-	.corner:after {background:#ff9933;content:"";height:5px;left:-35px;position:absolute;top:0px;width:39px;}
-	
-	#blink {-webkit-animation: blink 1s infinite;animation: blink 1s infinite;display:inline-block;}
-	#blink_two {-webkit-animation: blinktwo 1s infinite;animation: blinktwo 1s infinite;display:inline-block;}
-	@keyframes blink {0% {opacity: 1;}1% {opacity: 0;}49% {opacity: 1;}50% {opacity: 0;}}
-    @keyframes blinktwo {0% {opacity: 1;}}1% {opacity: 0;}49% {opacity: 1;}50% {opacity: 0;};}}
-	
-	/* | /\ CORNER DECORATION /\ | */
 	
 	section {
 		width: 100%;
@@ -284,47 +223,13 @@
 	
 	
 	/* | LARG (Ipad) | */
-	@media (max-width: 1000px) {
-		header h1 {
-			font-size: 75pt;
-		}
-		#hero-box {
-			height: 27em;
-		}
-		.hero-image {
-			height: 27em;
-		}
-		#cross {
-			top:31em
-		}
-	}
+	@media (max-width: 1000px) {}
+
 	/* | MIDEIM (Ipad Mini) | */
 	@media (min-width: 450px)and (max-width: 900px) {
-		header h1 {
-			font-size: 50pt;
+		.box {
+			display: none;
 		}
-		header {
-			padding-top: 8em;
-		}
-		.hero-image {
-			height: 17em;
-			top:7em;
-		}
-		#cross {
-			top:23em;
-		}
-		.out-line-box h1, .out-line-box-right h1 {
-		font-size: 36pt;
-	}
-		.background_block {
-		    height: 18em;
-            margin-top: 1.7em;
-            width: 75%;
-            left: 12.5%;
-        }
-	    .description{
-		font-size: 40pt;
-        }
         .paragraph {
 	        display:inline-block;
 	        width:90%;
@@ -344,29 +249,10 @@
          }
 	/* | SMALL (phone) | */
 	@media (min-width: 388px)and (max-width: 490px) {
-		header h1 {
-			font-size: 28pt;
-			margin-top: -.5em;
-		}
-		header {
-			padding-top: 8em;
-		}
-		.hero-image {
-			height: 16em;
-			top:8em;
-		}
-		#cross {
+		
+		.box {
 			display: none;
 		}
-		#corner {
-			display: none;
-		}
-		.out-line-box h1, .out-line-box-right h1 {
-		font-size: 30pt;
-		}
-		.description{
-		font-size: 40pt;
-        }
         .paragraph {
 	        display:inline-block;
 	        width:90%;
@@ -392,15 +278,8 @@
 	}
 	/* | EXTRA SMALL (small phone) | */
 	@media (max-width: 388px) {
-		header h1 {
-			font-size: 28pt;
-			margin-top: -.4em;
-		}
-		header {
-			padding-top: 9em;
-		}
-		.out-line-box h1, .out-line-box-right h1 {
-			font-size: 26pt;
+		.box {
+			display: none;
 		}
 		.coloums {
 	    		webkit-columns: 1;
