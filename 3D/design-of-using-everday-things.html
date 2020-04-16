@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<style>
+
+	body {
+		background: var(--background);
+		perspective: 1500px;
+		height: 100vh;
+	}
+	section {
+		width: 100%;
+		height: 20em;
+		margin: .5em 0em .5em 0em;
+		display: inline-block;
+	}
+	div.book {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+		
+		transform: rotateX(320deg) rotateY(30deg);
+	}
+	
+	div.face {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-size: cover;
+		background-color: #FFFFFF;
+	}
+	div.face-cover {
+		height: 400px;
+		width: 315px;
+		background-image: url("Book Cover Images/face-front.png");
+		transform: translateX(-50%) translateY(-50%) translateZ(15px);
+	}
+	div.face-side {
+		height: 400px;
+		width: 30px;
+		background-image: url("Book Cover Images/face-side.png");
+		transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(157px);
+	}
+	div.face-spine {
+		height: 400px;
+		width: 30px;
+		background-image: url("Book Cover Images/face-spine.png");
+		transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(157px);
+	}
+	div.face-top {
+		height: 30px;
+		width: 315px;
+		background-image: url("Book Cover Images/face-top.png");
+		transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+	}
+	div.face-back {
+		height: 400px;
+		width: 315px;
+		background-image: url("Book Cover Images/face-Back.png");
+		transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(15px);
+	}
+	div.face-bottom {
+		height: 30px;
+		width: 315px;
+		background-image: url("Book Cover Images/face-bottom.png");
+		transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+	}
+	
+</style>
+<body>
+	<section>
+		<div class="book">
+			<div class="face face-cover"></div>
+			<div class="face face-spine"></div>
+			<div class="face face-back"></div>
+			<div class="face face-top"></div>
+			<div class="face face-side"></div>
+			<div class="face face-bottom"></div>
+		</div>
+	</section>
+		<script src="rotate.js"></script>
+</body>
+</html>
