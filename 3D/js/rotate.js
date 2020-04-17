@@ -10,7 +10,7 @@ document.addEventListener("mousemove", function (event) {
  //	box.style.left = x + "px"
  //	box.style.top = y + "px"
  //	 /\ used to chand position of book /\	
-	box.style.transform = "rotateX(" + midY +  "deg) rotateY(" + midX + "deg)"
+	box.style.transform = "rotateX(" + ( midY * 0.2 ) +  "deg) rotateY(" + ( midX * 0.5 ) + "deg)"
 	
 	
 })
