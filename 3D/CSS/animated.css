@@ -1,3 +1,4 @@
+@charset "UTF-8";
 div.book {
 		transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);
 		animation: bookspin 5s;
