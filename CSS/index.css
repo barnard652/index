@@ -51,7 +51,7 @@ body {
 	#hero-box{
 		  width: 85%;
 		  height: 32em;
-		  border: 4px solid #ff9933;
+		  border: 3px solid #ff9933;
 		  position: absolute;
 		  top: 5em;
 		  left: 7.5%;
@@ -66,7 +66,7 @@ body {
 		  left: 6%;
 	    z-index:-99;
 	    background: url(https://static.tumblr.com/i0wttqk/tmDp6uwmw/artboard_1_3x.png);
-	    background-size:20%;
+	    background-size: 15%;
 	    background-position: fixed;
 	}
 	.hero-text h1:first-child:hover ~ .hero-image { background-image: url(https://66.media.tumblr.com/1b897b81d1d11a5ea930a989d2a26ff6/tumblr_otkaaxMx821tm7xnjo1_r1_1280.png); background-size: cover;}
