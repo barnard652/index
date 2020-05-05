@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>In Cold Blood</title>
+<link rel="stylesheet" type="text/css" href="CSS/animated.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<style>
+
+	body {
+		background-: #ff9933;
+		perspective: 1500px;
+		height: 100vh;
+	}
+	div.book {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+  }
+	div.face {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-size: cover;
+		background-color: #FFFFFF;
+	}
+	div.face-cover {
+		height: 500px;
+		width: 330px;
+		background-image:  url("images/In-Cold-Blood-face-front.png");
+		transform: translateX(-50%) translateY(-50%) translateZ(21.75px);
+	}
+	div.face-side {
+		height: 500px;
+		width: 43px;
+		background-image: url("images/face-side.png");
+		background-size: cover;
+		transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(165px);
+	}
+	div.face-spine {
+		height: 500px;
+		width: 43px;
+		background-image: url("images/In-Cold-Blood-face-spine.png");
+		transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(165px);
+	}
+	div.face-top {
+		height: 43px;
+		width: 330px;
+		background-image: url("images/face-top.png");
+		background-size: cover;
+		transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(250px);
+	}
+	div.face-back {
+		height: 500px;
+		width: 330px;
+		background-image: url("images/In-Cold-Blood-face-back.png");
+		transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(21.75px);
+	}
+	div.face-bottom {
+		height: 43px;
+		width: 330px;
+		background-image: url("Book Cover Images/face-bottom.png");
+		background-size: cover;
+		transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(250px);
+	}
+	div.face:before {
+  background: -webkit-radial-gradient(top left, rgba(0, 0, 0, 0.5), #000000);
+}
+div.face:after {
+  background: -webkit-radial-gradient(top right, rgba(0, 0, 0, 0.5), #000000);
+}
+	
+</style>
+<body>
+	<section>
+		<div class="book">
+			<div class="face face-cover"></div>
+			<div class="face face-spine"></div>
+			<div class="face face-back"></div>
+			<div class="face face-top"></div>
+			<div class="face face-side"></div>
+			<div class="face face-bottom"></div>
+		</div>
+	</section>
+		<script src="js/rotate.js"></script>
+</body>
+</html>
