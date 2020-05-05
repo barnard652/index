@@ -2,11 +2,23 @@
 div.book {
 		transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);
 		animation: bookspin 5s;
-	}
-	@keyframes  bookspin {
-		0% {transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);}
-  		25% { transform: rotateX(320deg) rotateY(30deg) rotateZ(0deg);}
-		50% { transform: rotateX(90deg) rotateY(0deg) rotateZ(-90deg);}
-		75% { tranform: rotateX(-15deg) rotateY(146deg) rotateZ(0deg);}
-		100% {transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);}
-	}
+}
+@keyframes  bookspin {
+	0% {transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);}
+  	25% { transform: rotateX(320deg) rotateY(30deg) rotateZ(0deg);}
+	50% { transform: rotateX(90deg) rotateY(0deg) rotateZ(-90deg);}
+	75% { tranform: rotateX(-15deg) rotateY(146deg) rotateZ(0deg);}
+	100% {transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);}
+}
+.reset_animation_button {
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	border: none;
+	color: orange;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 25.5vw;
+  	cursor: pointer;
+}
