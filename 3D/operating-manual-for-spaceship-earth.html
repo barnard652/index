@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>operating-manual-for-spaceship-earth-book</title>
+</head>
+<style>
+
+	body {
+		background-: #ff9933;
+		perspective: 1500px;
+		height: 100vh;
+	}
+	div.book {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+		
+		transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);
+		animation: bookspin 5s;
+	}
+	@keyframes  bookspin {
+		0% {transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);}
+  		25% { transform: rotateX(320deg) rotateY(30deg) rotateZ(0deg);}
+		50% { transform: rotateX(90deg) rotateY(0deg) rotateZ(-90deg);}
+		75% { tranform: rotateX(-15deg) rotateY(146deg) rotateZ(0deg);}
+		100% {transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);}
+	}
+	
+	div.face {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-size: cover;
+		background-color: #FFFFFF;
+	}
+	div.face-cover {
+		height: 450px;
+		width: 330px;
+		background-image:  url("Book Cover Images/operating-manual-for-spaceship-earth-face-front.jpg");
+		transform: translateX(-50%) translateY(-50%) translateZ(23.5px);
+	}
+	div.face-side {
+		height: 450px;
+		width: 47px;
+		background-image: url("Book Cover Images/face-side.png");
+		background-size: cover;
+		transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(165px);
+	}
+	div.face-spine {
+		height: 450px;
+		width: 47px;
+		background-image: url("Book Cover Images/operating-manual-for-spaceship-earth-face-spine.jpg");
+		transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(165px);
+	}
+	div.face-top {
+		height: 47px;
+		width: 330px;
+		background-image: url("Book Cover Images/face-top.png");
+		background-size: cover;
+		transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(225px);
+	}
+	div.face-back {
+		height: 450px;
+		width: 330px;
+		background-image: url("Book Cover Images/operating-manual-for-spaceship-earth-face-back.jpg");
+		transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(23.5px);
+	}
+	div.face-bottom {
+		height: 47px;
+		width: 330px;
+		background-image: url("Book Cover Images/face-bottom.png");
+		background-size: cover;
+		transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(225px);
+	}
+	div.face:before {
+  background: -webkit-radial-gradient(top left, rgba(0, 0, 0, 0.5), #000000);
+}
+div.face:after {
+  background: -webkit-radial-gradient(top right, rgba(0, 0, 0, 0.5), #000000);
+}
+	
+</style>
+<body>
+	<section>
+		<div class="book">
+			<div class="face face-cover"></div>
+			<div class="face face-spine"></div>
+			<div class="face face-back"></div>
+			<div class="face face-top"></div>
+			<div class="face face-side"></div>
+			<div class="face face-bottom"></div>
+		</div>
+	</section>
+		<script src="rotate.js"></script>
+</body>
+</html>
