@@ -14,3 +14,11 @@ document.addEventListener("mousemove", function (event) {
 	
 	
 })
+
+//  \/ CLICK TO RESET ANIMATION "BOOK-SPIN" \/			
+function reset_animation() {
+  var el = document.getElementById('book-spin');
+  el.style.animation = 'none';
+  el.offsetHeight; /* trigger reflow */
+  el.style.animation = null; 
+}
