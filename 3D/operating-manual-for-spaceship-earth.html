@@ -22,14 +22,6 @@
 		transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);
 		animation: bookspin 5s;
 	}
-	@keyframes  bookspin {
-		0% {transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);}
-  		25% { transform: rotateX(320deg) rotateY(30deg) rotateZ(0deg);}
-		50% { transform: rotateX(90deg) rotateY(0deg) rotateZ(-90deg);}
-		75% { tranform: rotateX(-15deg) rotateY(146deg) rotateZ(0deg);}
-		100% {transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);}
-	}
-	
 	div.face {
 		position: absolute;
 		top: 0;
@@ -40,7 +32,7 @@
 	div.face-cover {
 		height: 450px;
 		width: 330px;
-		background-image:  url("image/operating-manual-for-spaceship-earth-face-front.jpg");
+		background-image: url("image/paper-overlay.png"), url("image/operating-manual-for-spaceship-earth-face-front.jpg");
 		transform: translateX(-50%) translateY(-50%) translateZ(23.5px);
 	}
 	div.face-side {
@@ -53,7 +45,7 @@
 	div.face-spine {
 		height: 450px;
 		width: 47px;
-		background-image: url("image/operating-manual-for-spaceship-earth-face-spine.jpg");
+		background-image: url("image/paper-overlay.png"), url("image/operating-manual-for-spaceship-earth-face-spine.jpg");
 		transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(165px);
 	}
 	div.face-top {
@@ -66,7 +58,7 @@
 	div.face-back {
 		height: 450px;
 		width: 330px;
-		background-image: url("image/operating-manual-for-spaceship-earth-face-back.jpg");
+		background-image: url("image/paper-overlay.png"), url("image/operating-manual-for-spaceship-earth-face-back.jpg");
 		transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(23.5px);
 	}
 	div.face-bottom {
