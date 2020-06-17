@@ -162,12 +162,10 @@ a .project-text:hover .underline {
 .creative:nth-child(4):hover ~ .header-image {
 	background-image: url(https://matthew-barnard.com/img/Comp%203.gif);
 	background-size:cover;
-	background-position: cover;
 }
 .about:nth-child(5):hover ~ .header-image {
 	background-image: url(https://matthew-barnard.com/img/printer-animation.gif);
 	background-size:cover;
-	background-position: cover;
 }
 
 	/* | \/ SKILLS SECTION | About.html \/ | */
