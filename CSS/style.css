@@ -3,7 +3,7 @@
 
 .theme-light {
 	--background: #F0F0F0;
-    --accent-color: #707070;
+	--accent-color: #707070;
 	--hero-color: #ee8012;
 	--font: #264653;
 	--font-highlight: #FFFFFF;
@@ -12,7 +12,7 @@
 }
 .theme-dark {
   	--background: #012427;
-    --accent-color: lightgray;
+	--accent-color: lightgray;
 	--hero-color: #ee8012;
 	--font: #FFFFFF;
 	--font-highlight: #FFFFFF;
@@ -162,12 +162,12 @@ a .project-text:hover .underline {
 .creative:nth-child(4):hover ~ .header-image {
 	background-image: url(https://matthew-barnard.com/img/Comp%203.gif);
 	background-size:cover;
-	background-position: center;
+	background-position: cover;
 }
 .about:nth-child(5):hover ~ .header-image {
 	background-image: url(https://matthew-barnard.com/img/printer-animation.gif);
 	background-size:cover;
-	background-position: center;
+	background-position: cover;
 }
 
 	/* | \/ SKILLS SECTION | About.html \/ | */
