@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+
+nav {
+	position: fixed;
+	top: 1.5em;
+	right: 5%;
+	color: var(--hero-color);
+	font-size:30px;
+	z-index: 999;
+}
+nav:hover {
+	color: var(--font);
+}
+.nav {
+	height: auto;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	right: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 3.5em;
+	text-align: right;
+}
+.nav a {
+	margin: 1em;
+	text-decoration: none;
+	color: var(--accent-color);
+	display: inline;
+	transition: 0.3s;
+	font-family: din-2014,sans-serif;
+	font-weight: 700;
+	font-size: 12pt;
+	cursor: none;
+}
+.nav .closebtn {
+	margin-right: 15%;
+}
+/* -\/- Text underline animation -\/- */
+.nav .underline {
+	display: inline;
+	padding: 5px;
+	background-image: linear-gradient(120deg, var(--hero-color) 0%, var(--hero-color)100%);
+	background-repeat: no-repeat;
+	background-size: 80% 15%;
+	background-position: 0 70%;
+	transition: background-size 0.25s ease-in;
+	-webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.nav .underline:hover {
+	background-size: 110% 15%;
+}	

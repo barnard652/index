@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* \/ stating animation keyframes \/ */
+
+@keyframes StartAnimationText {
+	0% {
+		transform: translateY(15em);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0em);
+		opacity: 1;
+	}
+}
+
+@keyframes StartAnimationImage {
+	0% {
+		transform: translateX(10em);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0em);
+		opacity: 1;
+	}
+}
+
+/* \/ Blinking animation keyframes \/ */
+@keyframes blink {
+    
+    0% {color:{AccentColor};}
+    1% {color:white;}
+    49% {color:white;}
+    50% {color:{AccentColor};}
+}
+@keyframes blinktwo {
+    
+    0% {color:{AccentColor};}
+    1% {color:#ebe2ea;}
+    49% {color:#ebe2ea;}
+    50% {color:{AccentColor};}
+}
+
