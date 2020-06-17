@@ -1,117 +1,112 @@
 <!doctype html>
 <html>
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="color:selection" content="#eee"/>
-        <meta name="color:Content Background" content="#fff"/>
-        <meta name="color:Heading text" content=""/>
-        <meta name="color:Text" content="#000"/>
-        <meta name="font:Body" content=""/>
-        <meta name="image:BackgroundOne" content="http://static.tumblr.com/..."/>
-        <meta name="image:BackgroundTwo" content="http://static.tumblr.com/..."/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>The Design of Using Everday Things</title>
-	<link href="../CSS/ProjectPages.css" rel="stylesheet" type="text/css">
-	<link href="../CSS/scroll.css" rel="stylesheet" type="text/css">
-	<link href="../CSS/Nav.css" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" type="image/x-icon" href="http://static.tumblr.com/i0wttqk/prGow8f4d/hi-website.png">
-        <meta name="description" content="/">
-        <script src="https://use.typekit.net/bfu7lrf.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-            <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-81747723-2', 'auto');
-  ga('send', 'pageview');
-</script> 
+<meta charset="UTF-8">
+<title>The Design of Using Everyday Things | Matthew Barnard</title>
+<link href="../CSS/style.css" rel="stylesheet" type="text/css">
+<link href="../CSS/nav.css" rel="stylesheet" type="text/css">
+<link href="../CSS/animation.css" rel="stylesheet" type="text/css">
+<link href="../CSS/ProjectPageStyle.css" rel="stylesheet" type="text/css">
+<script src="../js/lighting-mode.js"></script>
+<script src="../js/cursor.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/ssq7tuz.css">
+	
+	<meta name="description" content="_Hi, im Matthew Barnard - Graphic Designer and Creative Problem Solver">
+	<meta name="keywords" content="matthew barnard, graphic, graphic, graphic, graphic design, graphic design, type, typography, illustation, motion graphics, animations, web, Design, Print, Website, UX, ux, ui, UI, Degree, UK, England, designer, editorial, editorial design, Book, Book Covers, penguin random house, penguin random house shortlist, penguin random house shortlist design, word press, WP, HTML, CSS, HTML5, CSS3, Bootstap, Logo, Branding, Logo design, Brading Design, Pilot, Gliding, Glider Pilot, Creative">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
-<body>
-	<nav>
-		<div id="navbox"></div>
-	<div id="mySidenav" class="sidenav">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&#x2715;</a>
-  		<a href="/" class="nav">_Home</a>
-  		    <div class="dropdown">
-  		</div>
-  		    <div class="dropdown">
-  		<a href="/home/#work">_Work</a>
-  		     <div class="dropdown-content" onclick="display=block">
-  		        <a href="/tagged/graphic">_Graphic</a>
-  		        <a href="/tagged/typography">_Typography</a>
-  		        <a href="/tagged/Illustration">_Illustation</a>
-  		        <a href="tagged/photography">_Photography</a>
-  		    </div>
-  		</div>
-  		<a href="/about">_About Me</a>
-  		<a href="mailto:barnardmatthew92@gmail.com?subject=_Hello&amp;body=type%20your%20messages%20here">_Email</a>
-  		<div id="socal_links">
-  		    <a href="https://www.behance.net/matthew_barnard"><i class="fa fa-behance" target="new"></i></a>
-        <a href="https://twitter.com/barnard652" target="new"><i class="fa fa-twitter"></i></a>
-        <a href="" target="new"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/matthew-barnard-4bb531b9/" target="new"><i class="fa fa-linkedin"></i></a>
-  		</div>
-	</div>
-	<div id="nav_burger">
-	    <span style="font-size:28px;cursor:pointer;color:{TitleColor};font-family: {TitleFont};font-weight: {TitleFontWeight};" onclick="openNav()"><a>&#9776;</a></span>
-    </div>
 
-	  <script>
+<body>
+	<!-- \/ cursor Ball div \/ -->
+	<div class="cursor"></div>
+	<!-- /\ cursor Ball div /\ -->
+	
+	<!-- \/ Navigation \/ -->
+	<nav onMouseOver="openNav()">&#10066;</nav>
+	<div id="nav" class="nav">
+		<a class="underline" href="/index">Home</a>
+		<a class="underline" href="/about">About</a>
+		<a class="underline" href="mailto:barnardmatthew92@gmail.com?subject=Love your Work">Contact</a>
+		<a class="underline" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" onClick="toggleTheme()">Switch</a>
+		<a class="underline closebtn" onMouseDown="closeNav()">Close</a>
+	</div>
+<script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("nav").style.width = "50%";
 }
+
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("nav").style.width = "0";
 }
-		</script>
-	</nav>
-	<div id="header">
-		<div id="blink">_</div>PROJECT:<br/>THE DESIGN OF USEING EVERYDAY THINGS. UNI DISATATION.
+</script>
+	<!-- /\ Navigation /\ -->
+<header>
+	<div id="header"><h1 class="underline">Project:<br/>The Design of Using Everyday Things Universaty Disatation</h1></div>
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "50px";
+  }
+}
+</script>
+	<div class="header-image">
+		<div class="header-image header-project-image" style="background-image: url(https://78.media.tumblr.com/f6e4a607f83e458032303763ca83723a/tumblr_om700tkCWK1tm7xnjo1_1280.png);"></div>
 	</div>
-	<script>
-	// When the user scrolls down 50px from the top of the document, resize the header's font size
-	window.onscroll = function() {scrollFunction()};
-	function scrollFunction() {
-	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-	    document.getElementById("header").style.fontSize = "30pt";
-	  } else {
-	    document.getElementById("header").style.fontSize = "75pt";
-	  }
-	}
-	</script>
-	<div id="scroll" class="demo">
- 		<a href="#down"><span></span></a>
-	</div>
-	<section id="skild-section">
-		<h1 style="font-size:40pt;text-alignment:justify;">Skills used; Illustrator, InDesign, Book Cover Design, Editorial, Essay Writing.</h1>
+</header>
+	<section>
+		<h2>Skills used; Illustrator, InDesign, Book Cover Design, Editorial, Essay Writing.</h2>
 	</section>
 	<section>
-		<h1 style="font-size:40pt;">About The Project</h1>
-		<div class="paragraph"><p>In this dissertation we find an investigation of how we as humans interact with an interface; from the present and invisible interface that we use every day in a habitual fashion such as switches, buttons and even doors, to help investigate how we use them and how they may help to design the interface of the future, including voice-active interfaces and motion or gesture-based command interfaces. As part of the marking grade, the look and images had to play a key part, the uses of flat design and clear layout in the book help to convey the key messages in the text as well as making it more usable as an item. <br/><br/>The writing was heavily inflation on Don Norman book "The design of everyday thing" with the design being influenced by teaching from Don Norman and the lessons learned in the writing of this dissertation. using simple block colours and a visible gride system the design is meant to show the working behind the UI, in this case, being in the format of a book, in a similar way that the writing explores this with UI design in other fields.</p></div>
-		<img class="img" src="https://78.media.tumblr.com/f6e4a607f83e458032303763ca83723a/tumblr_om700tkCWK1tm7xnjo1_1280.png"/>
+		<h2>About the Project</h2>
+		<p>In this dissertation we find an investigation of how we as humans interact with an interface; from the present and invisible interface that we use every day in a habitual fashion such as switches, buttons and even doors, to help investigate how we use them and how they may help to design the interface of the future, including voice-active interfaces and motion or gesture-based command interfaces. As part of the marking grade, the look and images had to play a key part, the uses of flat design and clear layout in the book help to convey the key messages in the text as well as making it more usable as an item.</br></br>The writing was heavily inflation on <a class="underline" href="https://www.amazon.co.uk/Design-Everyday-Things-Revised-Expanded/dp/0465050654/ref=sr_1_1?adgrpid=92277032852&dchild=1&gclid=EAIaIQobChMI0eWJiPaD6gIVxevtCh3VtAHKEAAYAiAAEgJzEPD_BwE&hvadid=406932858384&hvdev=c&hvlocphy=1006745&hvnetw=g&hvqmt=e&hvrand=8267430090017192162&hvtargid=kwd-392480668483&hydadcr=22612_1723292&keywords=don+norman+books&qid=1592227615&sr=8-1&tag=googhydr-21">Don Norman book "The design of everyday thing"</a> with the design being influenced by teaching from Don Norman and the lessons learned in the writing of this dissertation. using simple block colours and a visible gride system the design is meant to show the working behind the UI, in this case, being in the format of a book, in a similar way that the writing explores this with UI design in other fields.</p>
+		<iframe src="https://matthew-barnard.com/3D/design-of-using-everday-things.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" height="750px" width="100%" allowfullscreen=""></iframe>
+		<img src="https://78.media.tumblr.com/f6e4a607f83e458032303763ca83723a/tumblr_om700tkCWK1tm7xnjo1_1280.png" width="100%"/>
+		<img src="https://78.media.tumblr.com/dbc4c6a84916d7c77aaa88927fbd11f4/tumblr_p16e03OSiq1tm7xnjo1_1280.png" width="100%"/>
 	</section>
 	<section>
-		<img class="img-full" src="https://78.media.tumblr.com/f6e4a607f83e458032303763ca83723a/tumblr_om700tkCWK1tm7xnjo1_1280.png"/>
-	</section>
-  <section>
-		<img class="img-full" src="https://78.media.tumblr.com/dbc4c6a84916d7c77aaa88927fbd11f4/tumblr_p16e03OSiq1tm7xnjo1_1280.png"/>
-	</section>
-	
-		<iframe src="https://matthew-barnard.com/3D/design-of-using-everday-things.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" height="750px" width="100%" allowfullscreen></iframe>
-	
-	<section style="padding-top:2em;padding-bottom:2em;">
-		<h2 style="font-size:40pt;text-alignment:justify;">Other Projects;
-			<a href="/ProjectPage/operating-manual-for-spaceship-earth">Operating Manual For Spaceship Earth,</a>
-			<a href="/ProjectPage/in-cold-blood">Penguin Book Cover Short List</a>
-		</h2>
-	</section>
-	<footer>
 		<h2>
-			<div id="blink_two">_</div>WANT TO SEE A MY <a href="https://www.dropbox.com/sh/ji0wtpdw1h002iq/AAAWzov9gn7579ofpy-TE-8Qa?dl=0" target="new">PORTFOLIO?</a>
+			Other Projects;
+			<a href="/degree-poster" class="underline">2017 Degree Show Poster Design</a>
+			<a href="/Icon Set and Poster Design" class="underline">Icon Set and Poster Design</a>
+			<a href="/motion-graphic" class="underline">Motion Graphic Design</a>
 		</h2>
-	</footer>
+	</section>
+	<footer></footer>
+	<span>
+		<!-- \/ instergram Logo (scaled to 100%) \/ -->
+		<a href="https://www.instagram.com/matt652/" target="new">
+		<svg class="social-icons underline" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+	 viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve">
+			<path class="logo" id="XMLID_17_" fill="var(--font)" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722 c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156 C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156 c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722 c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"/>
+	
+			<path id="XMLID_81_" fill="var(--font)" d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z"/>
+	
+			<circle id="XMLID_83_" fill="var(--font)" cx="418.306" cy="134.072" r="34.149"/>
+		</svg>
+		</a>
+		<!-- \/ Linkedin Logo (scaled to 100%) \/ -->
+		<a href="https://www.linkedin.com/in/matthew-barnard-4bb531b9/" target="new">
+      	<svg class="social-icons underline" viewBox="0 50 512 512">
+        	<path fill="var(--font)" d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
+        C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z
+        M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615
+        c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915
+        s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"/>
+		</svg>
+		</a>
+		<!-- \/ Behance Logo (scaled to 100%) \/ -->
+		<a href="https://www.behance.net/matthew_barnard" target="new">
+		<svg class="social-icons underline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20">
+			<path fill="var(--font)" d="M8.072 9.301s1.892-.147 1.892-2.459c0-2.315-1.548-3.441-3.51-3.441H0v12.926h6.454s3.941.129 3.941-3.816c-.001-.001.171-3.21-2.323-3.21zM2.844 5.697h3.61s.878 0 .878 1.344c0 1.346-.516 1.541-1.102 1.541H2.844V5.697zm3.427 8.332H2.844v-3.455h3.61s1.308-.018 1.308 1.775c0 1.512-.977 1.669-1.491 1.68zm9.378-7.341c-4.771 0-4.767 4.967-4.767 4.967s-.326 4.941 4.767 4.941c0 0 4.243.254 4.243-3.437H17.71s.072 1.391-1.988 1.391c0 0-2.184.152-2.184-2.25h6.423c.001-.001.709-5.612-4.312-5.612zm1.941 3.886h-4.074s.266-1.992 2.182-1.992s1.892 1.992 1.892 1.992zm.507-6.414H12.98v1.594h5.117V4.16z"/>
+		</svg>
+		</a>
+	</span>
 </body>
 </html>
