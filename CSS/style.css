@@ -33,7 +33,7 @@ body {
 	transition-timing-function: ease-in-out;
 	counter-reset: counter;
 }
-/* \/ Custom Cursor Design \/ */
+/* \/ Custom Cursor Design \/ 
 html {
 	cursor: none;
 }
@@ -48,7 +48,7 @@ html {
 	z-index: 999;
 	transition: transform 0.5s;
 }
-/* /\ Custom Cursor Design /\ */
+ /\ Custom Cursor Design /\ */
 ::selection {
 	background: var(--hero-color);
 	color: var(--font-highlight);
