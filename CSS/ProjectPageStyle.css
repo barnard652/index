@@ -29,6 +29,9 @@ p {
 	font-family: din-2014,sans-serif;
 	font-weight: 500;
 }
+img {
+	display:block;
+}
 footer {
 	position: relative;
 	bottom: 0px;
