@@ -30,7 +30,7 @@ p {
 	font-weight: 500;
 }
 img {
-	display:block;
+	display: inline-gride;
 }
 footer {
 	position: relative;
