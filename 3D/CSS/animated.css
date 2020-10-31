@@ -2,8 +2,9 @@
 
 /*	\/ book satrting prosition \/ 	*/
 div.book {
-		transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);
-		animation: bookspin 5s;
+	transform: rotateX(20deg) rotateY(-40deg) rotateZ(0deg);
+	animation: bookspin 5s;
+	transition-delay: 0.25s;
 }
 /*	\/ book spining animation \/ 	*/
 @keyframes  bookspin {
