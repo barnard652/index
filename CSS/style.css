@@ -33,7 +33,7 @@ body {
 	transition-timing-function: ease-in-out;
 	counter-reset: counter;
 }
-/* \/ Custom Cursor Design \/ 
+/* \/ Custom Cursor Design \/ */
 html {
 	cursor: none;
 }
@@ -47,8 +47,26 @@ html {
 	mix-blend-mode: difference;
 	z-index: 999;
 	transition: transform 0.5s;
+	transition-timing-function: ease-out;
 }
- /\ Custom Cursor Design /\ */
+.click {
+	animation: cursorAnimation .5s forwards;
+}
+@keyframes cursorAnimation {
+	0%{ transform: scale(1)}
+	40%{ transform: scale(.4)}
+	100%{ transform: scale(1)}
+}
+.scroll {
+	animation: cursorAnimationScoll .5s forwards;
+	opacity: 1;
+}
+@keyframes cursorAnimationScoll {
+	0%{ opacity: 1;}
+	40%{ opacity: .2;}
+	100%{ opacity: 1;}
+}
+ /* /\ Custom Cursor Design /\ */
 ::selection {
 	background: var(--hero-color);
 	color: var(--font-highlight);
