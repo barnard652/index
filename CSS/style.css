@@ -99,6 +99,15 @@ header {
 	animation-name: StartAnimationText;
 	animation-duration: 1s;
 }
+.title-subpage {
+	padding: 5px;
+	position: relative;
+	top: 35vh;
+	z-index: 0;
+	text-shadow: var(--text-shawdow);
+	animation-name: StartAnimationText;
+	animation-duration: 1s;
+}
 /* -\/- Text underline animation -\/- */
 .underline {
 	display: inline;
