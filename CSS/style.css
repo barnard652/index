@@ -203,7 +203,7 @@ a .project-text:hover .underline {
 	transform: background-image 0.25s ease-in;
 	pointer-events: none;
 }
-.skill .box {
+.skill, .box {
 	margin: 300px 0px;
 }
 .box ul {
