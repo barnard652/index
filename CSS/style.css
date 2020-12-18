@@ -202,9 +202,9 @@ a .project-text:hover .underline {
 	background-position: 0 0, 0 0;
 	transform: background-image 0.25s ease-in;
 	pointer-events: none;
-}
-.box {
+	padding: 0px;
 	margin: 300px 0px;
+	display: inline-grid;
 }
 .box ul {
 	padding: 25px 45px 25px 175px;
