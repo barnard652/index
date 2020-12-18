@@ -10,6 +10,7 @@
 	body {
 		perspective: 1500px;
 		height: 100vh;
+		margin-right: 50%;
 	}
 	div.book {
 		display: block;
@@ -63,6 +64,28 @@
 		width: 320px;
 		background-image: url("image/paper-overlay.png"), url("image/face-bottom.png");
 		transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(225px);
+	}
+	
+	/* | MIDEIM (Ipad Mini) | */
+	@media (min-width: 450px)and (max-width: 900px) {
+	body {
+		perspective: 1500px;
+		margin-right: 35%;
+		}
+         }
+	/* | SMALL (phone) | */
+	@media (min-width: 388px)and (max-width: 490px) {
+	body {
+		perspective: 1500px;
+		margin-right: 0%;
+		}
+	}
+	/* | EXTRA SMALL (small phone) | */
+	@media (max-width: 388px) {
+	body {
+		perspective: 1500px;
+		margin-right: 0%;
+		}
 	}
 	
 </style>
