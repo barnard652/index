@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>About Me</title>
-<link href="CSS/style.css" rel="stylesheet" type="text/css">
-<link href="CSS/nav.css" rel="stylesheet" type="text/css">
-<link href="CSS/animation.css" rel="stylesheet" type="text/css">
-<link href="CSS/var.css" rel="stylesheet" type="text/css">
-<script src="js/lighting-mode.js"></script>
-<script src="js/cursor.js"></script>
+<link href="/CSS/style.css" rel="stylesheet" type="text/css">
+<link href="/CSS/nav.css" rel="stylesheet" type="text/css">
+<link href="/CSS/animation.css" rel="stylesheet" type="text/css">
+<link href="/CSS/var.css" rel="stylesheet" type="text/css">
+<script src="/js/lighting-mode.js"></script>
+<script src="/js/cursor.js"></script>
 <link rel="stylesheet" href="https://use.typekit.net/ssq7tuz.css">
 
 	
@@ -44,16 +44,38 @@ function closeNav() {
 </script>
 	<!-- /\ Navigation /\ -->
 	
+	<!-- \/ cursor Ball div \/ -->
+	<div class="cursor"></div>
+	<!-- /\ cursor Ball div /\ -->
+	
+	<header>
+		<h2 class="title underline" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" style="font-size: 10px;">After leaving university I went to work into a digital agency where I work on projects for Morrisons, Aunt Bessie, Food Doctor and Starbucks doing some print based work but focusing mainly on digital ordering systems, user interfaces and websites.</h2>
+		<div class="subject">
+				<a class="underline graphic" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" href="" >Graphic Design</a>
+				<a class="underline typography" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" href="">Typography</a>
+				<a class="underline web" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" href="">Web Design</a>
+				<a class="underline creative" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" href="">Creative</a>
+				<a class="underline about" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" href="/about">About Me</a>
+				<a class="underline contact" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" href="mailto:barnardmatthew92@gmail.com?subject=Hi%20there%2C%20I%20really%20like%20your%20work%20%3A)">Contact me</a>
+				<div class="header-image" id="header-image"></div>
+			</div>
+	</header>
+	<script>
+// When the user scrolls down 100px from the top of the document, resize the header's image width 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("header-image").style.width = "90%";
+  } else {
+    document.getElementById("header-image").style.width = "71%";
+  }
+}
+</script>	
+	
+	
 	<section class="skills" style="margin-top:7em;">
-		<h2 class="underline sectionTitle">My Background</h2>
-		<p class="paragraph">Hi, my name is Matthew Barnard, a 22-year-old multi-disciplined designer based in the UK. My experience ranges from Digital designs such as UI/UX Design, Web Design and Motion Graphics to Branding, Type design and Front-End Development with a well-recognised background in Print formats such as Book Cover and Edital design. Demonstrated by being a shortlisted for Penguin Random House student design awards 2018 and receiving a Commendation from the University of Northampton for my achievements.  <br/>
- <br/>
-After leaving university I went to work into a digital agency where I work on projects for Morrisons, Aunt Bessie, Food Doctor and Starbucks doing some print based work but focusing mainly on digital ordering systems, user interfaces and websites. <br/>
-<br/>
-As a Designer, I believe that design can change the world and solve real-world problems. I have a passion for learning new skills, designing visual languages, solving complex problems using narrative and storytelling in my design, believing in creating meaningful and emotional reactions using graphics for the better.  <br/>
- <br/>
-My passion for design is shown by my first class Hons degree in BA Hons Graphic Communication and the drive to complete a Master Degree in the future to expand my skills and knowledge in this fascinating area.Outside of the studio, you can find me at the airfield where I fly gliders from Buckminster Gliding Club where I am building my skill as a Pilot, both flying Glider and Motor Glider.
-</p>
+				<iframe src="https://matthew-barnard.com/3D/Portfolio" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" height="850px" width="100%" allowfullscreen></iframe>
 		<div class="box">
 			<ul>
 				Skills:
