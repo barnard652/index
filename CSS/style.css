@@ -185,6 +185,10 @@ a .project-text:hover .underline {
 	background-image: url(https://matthew-barnard.com/img/printer-animation.gif);
 	background-size:cover;
 }
+.contact:nth-child(5):hover ~ .header-image {
+	background-image: url(https://matthew-barnard.com/img/dog-animation.gif);
+	background-size:cover;
+}
 
 	/* | \/ SKILLS SECTION | About.html \/ | */
 .box {
