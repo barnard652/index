@@ -191,7 +191,7 @@ a .project-text:hover .underline {
 }
 
 	/* | \/ SKILLS SECTION | About.html \/ | */
-.box {
+.skill, .box {
 	position: absolute;
 	right:5%;
 	display: inline-block;
@@ -203,7 +203,7 @@ a .project-text:hover .underline {
 	transform: background-image 0.25s ease-in;
 	pointer-events: none;
 }
-.skill, .box {
+.box {
 	margin: 300px 0px;
 }
 .box ul {
