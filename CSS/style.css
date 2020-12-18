@@ -194,7 +194,6 @@ a .project-text:hover .underline {
 .box {
 	position: absolute;
 	right:5%;
-	top: 10em;
 	display: inline-block;
 	width:55%;
 	height: auto;
@@ -202,14 +201,16 @@ a .project-text:hover .underline {
 	background-size: 12px 12px;
 	background-position: 0 0, 0 0;
 	transform: background-image 0.25s ease-in;
-	line-height: 3em;
+	pointer-events: none
+}
+.skill .box {
+	margin: 300px 0px;
 }
 .box ul {
-	padding: 60px 60px 100px 175px;
+	padding: 25px 45px 25px 175px;
 	text-align: right;
-	font-size: 30px;
-}
-.box ul li {
+	font-size: 20px;
+	line-height:28px;
 	list-style: none;
 	display: inline;
 }
