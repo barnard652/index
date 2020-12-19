@@ -199,6 +199,24 @@ a .project-text:hover .underline {
 	background-size:cover;
 }
 
+/* -- Header iamge gallary | about-me.html -- */
+.Skills:nth-child(1):hover ~ .header-image {
+	background-image: url(https://matthew-barnard.com/img/ball-animation.gif);
+	background-size:cover;
+}
+.Education:nth-child(2):hover ~ .header-image {
+	background-image: url(https://matthew-barnard.com/img/ball-animation.gif);
+	background-size:cover;
+}
+.Awards:nth-child(3):hover ~ .header-image {
+	background-image: url(https://matthew-barnard.com/img/dog-animation.gif);
+	background-size:cover;
+}
+.contact:nth-child(4):hover ~ .header-image {
+	background-image: url(https://matthew-barnard.com/img/dog-animation.gif);
+	background-size:cover;
+}
+
 	/* | \/ SKILLS SECTION | About.html \/ | */
 .skill, .box {
 	position: absolute;
