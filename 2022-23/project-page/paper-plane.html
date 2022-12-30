@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Matthew Barnard | Paper plane</title>
+<link rel="shortcut icon" type="image/x-icon" href="../image/favicon.ico">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/project-page-style.css">
+<script src="../js/lighting-mode.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/ssq7tuz.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div id="logo"></div>
+    <li class="dropdown header-nav" onmouseover="NavBurger(this)" onmouseout="NavBurger(this)">
+      <ul class="dropdown-content">
+        <li><h3><a href="/index" class="underline">Home</a></h3></li>
+        <li><h3><a href="/about" class="underline">About</a></h3></li>
+        <li><h3><a href="/stuff" class="underline">Stuff</a></h3></li>
+        <li><h3><a href="mailto:barnardmatthew92@gmail.com" class="underline">Contact</a></h3></li>
+      </ul>
+      <div class="burger-container">
+        <div class="burger-bar1"></div>
+        <div class="burger-bar2"></div>
+        <div class="burger-bar3"></div>
+      </div>
+    </li>
+  </header>
+    <div class="parent project-page-parent" style="display: grid;">
+      <div class="project-page-title">
+        <h1>Paper Plane Flight Logging System for GA & Glider.</h1>
+        <h3>Skills used; Adobe Xd, UI Design, UX Design, System Design, Logo Design.</h3>
+      </div>
+      <div class="dot-box" style="grid-area: 2 / 2 / 4 / 8; z-index: 3"></div>
+      <div class="project-image-hero" >
+        <img src="https://matthew-barnard.com/img/Paper%20Plane/Artboard%203-100.jpg">
+      </div>
+    </div>
+    <a name="project"></a>
+    <div class="parent project-gallery-parent">
+      <div class="two-thirds-left">
+        <div class="about-project-text">
+          <h2>About The Project</h2>
+          <p>Paper Plane is a flight logging app designed for groups of people who love flying, from the small group of friends who need a way to keep track of their aircraft flight records and documents to clubs and organizations such as flight schools and gliding clubs. Using a clean and simple design this system is designed to keep logging aircraft simple and easy.</p>
+        </div>
+        </div>
+      <div class="two-thirds-right">
+        <img width="100%" src="https://matthew-barnard.com/img/Paper%20Plane/Artboard%201-100.jpg">
+        <img width="100%" src="https://matthew-barnard.com/img/Paper%20Plane/Artboard%202-100.jpg">
+      </div>
+    </div>
+    <div class="parent project-gallery-parent">
+      <div class="single">
+        <img width="100%" src="https://matthew-barnard.com/img/Paper%20Plane/Artboard%203-100.jpg">
+        <img width="100%" style="margin-top: -5px;" src="https://matthew-barnard.com/img/Paper%20Plane/Artboard%204-100.jpg">
+        <img width="100%" style="margin-top: -5px;" src="https://matthew-barnard.com/img/Paper%20Plane/Artboard%205-100.jpg">
+      </div>
+    </div>
+    </div>
+    <div class="parent project-gallery-parent">
+      <div class="half-left">
+        <img width="100%" src="https://media2.giphy.com/media/z2LrwkMi1AKFeBNsAK/giphy.gif">
+      </div>
+      <div class="half-right">
+        <div class="about-project-text">
+          <h3>Activly changing statetus are sumple and easy to understand with clean animation and text.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="parent project-gallery-parent">
+      <div class="single">
+        <img width="100%" src="https://matthew-barnard.com/img/Paper%20Plane/Artboard%206-100.jpg">
+        <img width="100%" style="margin-top: -5px;" src="https://matthew-barnard.com/img/Paper%20Plane/Artboard%207-100.jpg">
+      </div>
+    </div>
+    <footer>
+      <h2><a href="index/#work" class="underline">Other Work</a></h2>
+    </footer>
+    <footer class="footer-project">
+      <div class="footer-img">
+        <a href="/project-page/">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/c6841f100072951.5f00c23593612.jpg" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Buckminster Gliding Club Visual Identaty</h2>">
+        </a>
+          <h3 class="project-title">Buckminster Gliding Club Visual Identaty</h3>
+      </div>
+      <div class="footer-img">
+        <a href="/project-page/">
+          <img src="https://matthew-barnard.com/img/swimming-app/Watch.png" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Swim.io<br/>Swimming App UI and UX Design Concept</h2>">
+        </a>
+        <h3 class="project-title">Swim.io Swimming App UI and UX Design Concept</h3>
+      </div>
+      <div class="footer-img">
+        <a href="/project-page/spark">
+          <img src="https://matthew-barnard.com/img/spark/falling-business-card-mockups.jpg" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>SPARK<br/>Metal Fabrications Branding</h2>">
+        </a>
+          <h3 class="project-title">SPARK, Metal Fabrications Branding</h3>
+      </div>
+    </footer>
+
+    
+    
+ <!-- Cursors replacment V1 -->
+
+ <div class="cursor" id="cursor">
+    <div>
+      <span></span>
+    </div>
+  </div>
+  
+  
+  
+  <script>
+  const cursorTag = document.querySelector("div.cursor")
+  const balls = cursorTag.querySelectorAll("div")
+  const ballMessage = cursorTag.querySelector("div span")
+  const images = document.querySelectorAll("img[data-hover]")
+  
+  let aimX = 0
+  let aimY = 0
+  
+  balls.forEach((ball, index) => {
+    let currentX = 0
+      let currentY = 0
+  
+      let speed = 0.3 - index * 0.015
+  
+    const animate = function () {
+      currentX += (aimX - currentX) * speed
+      currentY += (aimY - currentY) * speed
+  
+      ball.style.left = currentX + "px"
+      ball.style.top = currentY + "px"
+  
+      requestAnimationFrame(animate)
+    }
+  
+    animate()
+  })
+  
+  
+  document.addEventListener("mousemove", function (event) {
+    aimX = event.pageX
+    aimY = event.pageY
+  })
+  
+  images.forEach(image => {
+    image.addEventListener("mouseover", function () {
+      ballMessage.classList.add("visible")
+      ballMessage.innerHTML = image.getAttribute("data-hover")
+    })
+  
+    image.addEventListener("mouseout", function () {
+      ballMessage.classList.remove("visible")
+    })
+  })
+  </script>
+  <script>
+    function NavBurger(x) {
+  x.classList.toggle("NavBurgerAnimation");
+  }
+  </script>
+</body>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Matthew Barnard | in Cold Blood</title>
+<link rel="shortcut icon" type="image/x-icon" href="../image/favicon.ico">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/project-page-style.css">
+<script src="../js/lighting-mode.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/ssq7tuz.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div id="logo"></div>
+    <li class="dropdown header-nav" onmouseover="NavBurger(this)" onmouseout="NavBurger(this)">
+      <ul class="dropdown-content">
+        <li><h3><a href="/index" class="underline">Home</a></h3></li>
+        <li><h3><a href="/about" class="underline">About</a></h3></li>
+        <li><h3><a href="/stuff" class="underline">Stuff</a></h3></li>
+        <li><h3><a href="mailto:barnardmatthew92@gmail.com" class="underline">Contact</a></h3></li>
+      </ul>
+      <div class="burger-container">
+        <div class="burger-bar1"></div>
+        <div class="burger-bar2"></div>
+        <div class="burger-bar3"></div>
+      </div>
+    </li>
+  </header>
+    <div class="parent project-page-parent" style="display: grid;">
+      <div class="project-page-title">
+        <h1>Shortlisted Design Penguin Random House Student Design Awards 2017, In Cold Blood.</h1>
+        <h3>Skills used; Photoshop, InDesign, Book Cover Design, Type Design, Hand Lettering.</h3>
+      </div>
+      <div class="dot-box" style="grid-area: 2 / 2 / 4 / 8; z-index: 3"></div>
+      <div class="project-image-hero" >
+        <img src="https://78.media.tumblr.com/2b6dea0e6181ef431b526f8c7c05af7f/tumblr_oqbr0hzLYP1tm7xnjo1_1280.jpg">
+      </div>
+    </div>
+    <a name="project"></a>
+    <div class="parent project-gallery-parent">
+      <div class="two-thirds-left">
+        <div class="about-project-text">
+          <h2>About The Project</h2>
+          <p>In 2017 I was lucky another to be shortlisted as one of 10 finished in the <a href="https://www.youtube.com/watch?v=pTnhj0uZzzg">Penguin Random House Student Design Awards</a> out of over 750 entries that year alone for the Non-fiction catergory where the book was Truman Capote In Clod Blood. 
+            <br/><br/>
+            For the design of this Non-fiction classic, the concept is based on the belief and the character’s religion, as in my opinion this shapes the characters and the overall message; ‘thou shalt not kill’. As the characters are mainly Christian, this is the sixth commandment, repeated 6 times for the six people who died in the book. This also represents 666 for the devil, whom many people thought the murderers were. As for the overall look of the cover, this comes from both the story and ‘Bastille Four Walls’, which is based on Perry Smith who is one of the characters in the book. This particular song helps me to form an emotional understanding of Perry Smith and what his story was, as well as helping me to understand the book overall. A line in the book that particularly helped me was “Now we’re faced with two wrongs” which to me sums up the book as a whole.
+          </p>
+        </div>
+        </div>
+      <div class="two-thirds-right">
+        <iframe src="https://matthew-barnard.com/3D/in-cold-blood-book.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" height="850px" width="100%" allowfullscreen=""></iframe>
+        <img width="100%" src="https://78.media.tumblr.com/2b6dea0e6181ef431b526f8c7c05af7f/tumblr_oqbr0hzLYP1tm7xnjo1_1280.jpg">
+      </div>
+    </div>
+   
+    <footer>
+      <h2><a href="index/#work" class="underline">Other Work</a></h2>
+    </footer>
+    <footer class="footer-project">
+      <div class="footer-img">
+        <a href="/project-page/">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/c6841f100072951.5f00c23593612.jpg" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Buckminster Gliding Club Visual Identaty</h2>">
+        </a>
+          <h3 class="project-title">Buckminster Gliding Club Visual Identaty</h3>
+      </div>
+      <div class="footer-img">
+        <a href="/project-page/">
+          <img src="https://matthew-barnard.com/img/swimming-app/Watch.png" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Swim.io<br/>Swimming App UI and UX Design Concept</h2>">
+        </a>
+        <h3 class="project-title">Swim.io Swimming App UI and UX Design Concept</h3>
+      </div>
+      <div class="footer-img">
+        <a href="/project-page/spark">
+          <img src="https://matthew-barnard.com/img/spark/falling-business-card-mockups.jpg" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>SPARK<br/>Metal Fabrications Branding</h2>">
+        </a>
+          <h3 class="project-title">SPARK, Metal Fabrications Branding</h3>
+      </div>
+    </footer>
+
+    
+    
+ <!-- Cursors replacment V1 -->
+
+ <div class="cursor" id="cursor">
+    <div>
+      <span></span>
+    </div>
+  </div>
+  
+  
+  
+  <script>
+  const cursorTag = document.querySelector("div.cursor")
+  const balls = cursorTag.querySelectorAll("div")
+  const ballMessage = cursorTag.querySelector("div span")
+  const images = document.querySelectorAll("img[data-hover]")
+  
+  let aimX = 0
+  let aimY = 0
+  
+  balls.forEach((ball, index) => {
+    let currentX = 0
+      let currentY = 0
+  
+      let speed = 0.3 - index * 0.015
+  
+    const animate = function () {
+      currentX += (aimX - currentX) * speed
+      currentY += (aimY - currentY) * speed
+  
+      ball.style.left = currentX + "px"
+      ball.style.top = currentY + "px"
+  
+      requestAnimationFrame(animate)
+    }
+  
+    animate()
+  })
+  
+  
+  document.addEventListener("mousemove", function (event) {
+    aimX = event.pageX
+    aimY = event.pageY
+  })
+  
+  images.forEach(image => {
+    image.addEventListener("mouseover", function () {
+      ballMessage.classList.add("visible")
+      ballMessage.innerHTML = image.getAttribute("data-hover")
+    })
+  
+    image.addEventListener("mouseout", function () {
+      ballMessage.classList.remove("visible")
+    })
+  })
+  </script>
+  <script>
+    function NavBurger(x) {
+  x.classList.toggle("NavBurgerAnimation");
+  }
+  </script>
+</body>
