@@ -5,6 +5,7 @@
 <title>Matthew Barnard | Graphic Designer</title>
 <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animation.css">
 <script src="js/lighting-mode.js"></script>
 <script src="js/image-rollover.js"></script>
 <script src="js/dot.js"></script>
@@ -367,5 +368,17 @@ x.classList.toggle("NavBurgerAnimation");
   }
   </script>
 
+  <script>
+    window.addEventListener(
+  "scroll",
+  () => {
+    document.body.style.setProperty(
+      "--scroll",
+      window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+    );
+  },
+  false
+);
+  </script>
 </body>
 </html>
