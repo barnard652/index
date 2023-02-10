@@ -4,11 +4,13 @@
 <meta charset="UTF-8">
 <title>Matthew Barnard | Graphic Designer</title>
 <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+<!-- \/ CSS FILES \/ -->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/animation.css">
-<script src="js/lighting-mode.js"></script>
-<script src="js/image-rollover.js"></script>
-<script src="js/dot.js"></script>
+<!-- \/ JS FILES \/ -->
+<script src="js/main.js"></script>
+
+
 <link rel="stylesheet" href="https://use.typekit.net/ssq7tuz.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -52,6 +54,8 @@
   <div class="hero-image">
     <div id="BG"></div>
   </div>
+  <!-- image rollover JS files --> 
+<script src="js/image-rollover.js"></script>
   <div class="social-container">
 		<!-- \/ instergram Logo (scaled to 100%) \/ -->
 		<a href="https://www.instagram.com/matt652/" target="new">
@@ -82,6 +86,7 @@
 		</a>
 	</div>
 </div>
+<div class="mobile-spacing"></div>
 <div class="parent">
   <a name="about-me"></a>
   <div class="about-image" style="z-index:-1; ">
@@ -97,9 +102,9 @@
       </ul>
     </nav>
   </div>
-
   <div class="dot-box"></div>
 </div>
+  <div class="mobile-spacing"></div>
   <div class="sticky-header"><h2>View Some of My Work</h2></div>
 <div class="parent">
   <a name="work"></a>
@@ -206,179 +211,12 @@
   <p>©2022 Website design and build by <a href="mailto:barnardmatthew92@gmal.com" class="underline">Matthew Barnard</a></p>
 </div>
 </footer>
-<script>
-(function () {
-  const bg_parallax = document.getElementsByClassName("bg_parallax"); Array.prototype.forEach.call(bg_parallax, function (el) {
-    let bgPos = {
-      x: 50,
-      y: 50
-    };
-    const delta = -0.005;
-    let reactToTweenUpdate = () => {
-      let winW = window.innerWidth / 2;
-      let winH = window.innerHeight / 2;
-      el.style.backgroundPosition = `${50 - (bgPos.x - winW) * delta}% ${
-        50 - (bgPos.y - winH) * delta
-      }%`;;
-    };
-    let tween = new TweenMax(bgPos, 0.9, {
-      onUpdate: () => reactToTweenUpdate(),
-      ease: Power4.easeOut    
-    });
-    el.onmousemove = function (event) {
-      tween.updateTo(
-        {
-          x: event.clientX,
-          y: event.clientY
-        },
-        true
-      );
-    };
-  });
-})();
-</script>
-
-
-
-
-
  <!-- Cursors replacment V1 -->
-
 <div class="cursor" id="cursor">
   <div>
     <span></span>
   </div>
 </div>
-
-<script>
-//cursor
-const cursorTag = document.querySelector("div.cursor")
-const balls = cursorTag.querySelectorAll("div")
-const ballMessage = cursorTag.querySelector("div span")
-const images = document.querySelectorAll("img[data-hover]")
-
-let aimX = 0
-let aimY = 0
-
-balls.forEach((ball, index) => {
-  let currentX = 0
-	let currentY = 0
-
-	let speed = 0.3 - index * 0.015
-
-  const animate = function () {
-    currentX += (aimX - currentX) * speed
-    currentY += (aimY - currentY) * speed
-
-    ball.style.left = currentX + "px"
-    ball.style.top = currentY + "px"
-
-    requestAnimationFrame(animate)
-  }
-
-  animate()
-})
-
-
-document.addEventListener("mousemove", function (event) {
-  aimX = event.pageX
-  aimY = event.pageY
-})
-
-images.forEach(image => {
-  image.addEventListener("mouseover", function () {
-    ballMessage.classList.add("visible")
-    ballMessage.innerHTML = image.getAttribute("data-hover")
-  })
-
-  image.addEventListener("mouseout", function () {
-    ballMessage.classList.remove("visible")
-  })
-})
-</script>
-<!-- image rollover -->
-<script>
-  document.getElementById("graphic").addEventListener("mouseover", function() {
-    document.getElementById("BG").style.backgroundImage = "url(https://66.media.tumblr.com/75fb4140d41cc9e77c24dd6e4f4dc245/tumblr_p3lju0tpj91tm7xnjo1_r1_1280.jpg)";
-  }, false);
-  document.getElementById("graphic").addEventListener("mouseout", function() {
-     document.getElementById("BG").style.backgroundImage = "";
-  }, false);
-
-  document.getElementById("branding").addEventListener("mouseover", function() {
-    document.getElementById("BG").style.backgroundImage = "url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/c6841f100072951.5f00c23593612.jpg";
-  }, false);
-  document.getElementById("branding").addEventListener("mouseout", function() {
-     document.getElementById("BG").style.backgroundImage = "";
-  }, false);
-  
-  document.getElementById("website").addEventListener("mouseover", function() {
-    document.getElementById("BG").style.backgroundImage = "url(https://github.com/barnard652/index/blob/master/img/stop-writing-shit-code/stop-writting-shit-code.png?raw=true)";
-  }, false);
-  document.getElementById("website").addEventListener("mouseout", function() {
-     document.getElementById("BG").style.backgroundImage = "";
-  }, false);
-  
-  document.getElementById("UI/UX").addEventListener("mouseover", function() {
-    document.getElementById("BG").style.backgroundImage = "url(https://github.com/barnard652/index/blob/master/img/spark/falling-business-card-mockups.jpg?raw=true)";
-  }, false);
-  document.getElementById("UI/UX").addEventListener("mouseout", function() {
-     document.getElementById("BG").style.backgroundImage = "";
-  }, false);
-  
-  document.getElementById("motion").addEventListener("mouseover", function() {
-    document.getElementById("BG").style.backgroundImage = "url(https://github.com/barnard652/index/blob/master/img/Comp%203.gif?raw=true)";
-  }, false);
-  document.getElementById("motion").addEventListener("mouseout", function() {
-     document.getElementById("BG").style.backgroundImage = "";
-  }, false);
-  
-  document.getElementById("illustration").addEventListener("mouseover", function() {
-    document.getElementById("BG").style.backgroundImage = "url(https://github.com/barnard652/index/blob/master/img/Illustation-Image.png?raw=true)";
-  }, false);
-  document.getElementById("illustration").addEventListener("mouseout", function() {
-     document.getElementById("BG").style.backgroundImage = "";
-  }, false);
-
-  document.getElementById("stuff").addEventListener("mouseover", function() {
-    document.getElementById("BG").style.backgroundImage = "url(https://media3.giphy.com/media/1YaYwvueDztl6nWXyW/giphy.gif?cid=790b7611a7858ef6cb25fade3fcafe172c4bb07b13e02abb&rid=giphy.gif&ct=g)";
-  }, false);
-  document.getElementById("stuff").addEventListener("mouseout", function() {
-     document.getElementById("BG").style.backgroundImage = "";
-  }, false);
-
-</script>
-<!-- Nav Burger animation -->
-<script>
-  function NavBurger(x) {
-x.classList.toggle("NavBurgerAnimation");
-}
-</script>
-<!-- nav buger appares after scoling down -->
-<script>
-  // When the user scrolls down 50px from the top of the document, resize the header's font size
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-      document.getElementById("header").style.display = "block";
-    } else {
-      document.getElementById("header").style.display = "none";
-    }
-  }
-  </script>
-
-  <script>
-    window.addEventListener(
-  "scroll",
-  () => {
-    document.body.style.setProperty(
-      "--scroll",
-      window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-    );
-  },
-  false
-);
-  </script>
+<script src="js/cursor.js"></script>
 </body>
 </html>
