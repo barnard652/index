@@ -42,6 +42,7 @@ body {
 	transition-timing-function: ease-in-out;
 	counter-reset: counter;
 	padding-bottom: env(safe-area-inset-botttom);
+	cursor: none;
 }
 .parent {
 	width: 90%;
@@ -344,31 +345,31 @@ a .project-text:hover .underline {
 
 /* mouses styling */
 div.cursor div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  background-color: var(--font);
-  border-radius: 50%;
-  z-index: 10000;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: luminosity;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 24px;
+	background-color: var(--font);
+	border-radius: 50%;
+	z-index: 10000;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	mix-blend-mode: luminosity;
 }
 div.cursor div span {
-  position: absolute;
-  top: -16px;
-  left: 40px;
-  width: 300px;
-  line-height: 24px;
-  color: var(--font);
-  opacity: 0;
-  transition: opacity 0.5s;
-  mix-blend-mode: luminosity;
+	position: absolute;
+	top: -16px;
+	left: 40px;
+	width: 300px;
+	line-height: 24px;
+	color: var(--font);
+	opacity: 0;
+	transition: opacity 0.5s;
+	mix-blend-mode: luminosity;
 }
 div.cursor div span.visible {
-  opacity: 1;
+	opacity: 1;
 }
 footer {
 	width: 90%;
@@ -413,32 +414,33 @@ footer p {
 	width: 0px;
 }
 	/* | SMALL (phone) | */
-	@media (min-width: 120px)and (max-width: 820px) {
+	@media (min-width: 120px)and (max-width: 620px) {
 		.parent {
 			display: flow-root;
 			grid-template-columns: repeat(4, 1fr);
 			grid-template-rows: repeat(8, 1fr);
 			grid-column-gap: 0;
 			grid-row-gap: 0;
-            height: auto;
+			height: auto;
 			max-height: none;
 			min-height: fit-content;
 		}
-		.hero {
-			min-height: 100vh;
-		}
-		.hero-text .small-text {line-height: 14vw; font-size: 10vw; margin-top: 80px;}
+		.mobile-spacing{display: inline-block; width:100%; height: 250px;}
+		.hero {min-height: 100vh;}
+		.hero-text .small-text {line-height: 6vw; font-size: 4vw; margin-top: 80px; margin-bottom: 24px;}
 		.hero-text {grid-area: 3 / 1 / 5 / 5; }
-		.hero-text h1 {line-height: 14vw;; font-size: 10vw;}
+		.hero-text h1 {line-height: 12vh; font-size: 10vh;}
+		.about-image {animation: none}
+		.about-text {animation: none}
 
 		.parnet, img {height: 340px;}
 		.box-image { grid-area: none;  }
 		.body-text { grid-area: none;  }
 		.dot-box { display: none; }
-		.project-left-large { grid-area: none; padding-bottom: 80px; animation: none;}
-		.project-right-small { grid-area: none;  padding-bottom: 80px; animation: none;}
-		.project-left-small { grid-area: none;  padding-bottom: 80px; animation: none;}
-		.project-right-large { grid-area: none; padding-bottom: 80px; animation: none;}
+		.project-left-large { grid-area: none; padding-bottom: 80px; animation: none; }
+		.project-right-small { grid-area: none;  padding-bottom: 80px; animation: none; }
+		.project-left-small { grid-area: none;  padding-bottom: 80px; animation: none; }
+		.project-right-large { grid-area: none; padding-bottom: 80px; animation: none; }
 
 		/* \/ project title appear under image only on moblie \/ */
 		.project-left-large .project-left-small .project-right-large .project-right-small, .project-title {display: block;}
