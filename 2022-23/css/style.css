@@ -53,7 +53,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(6, 1fr);
-	grid-column-gap: 64px;
+	grid-column-gap: 5%;
 	grid-row-gap: 80px;
 }
 .hero {
@@ -433,7 +433,7 @@ footer p {
 		.about-image {animation: none}
 		.about-text {animation: none}
 
-		.parnet, img {height: 340px;}
+		.parent, img {height: 340px;}
 		.box-image { grid-area: none;  }
 		.body-text { grid-area: none;  }
 		.dot-box { display: none; }
