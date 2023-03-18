@@ -53,8 +53,12 @@ body {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(6, 1fr);
-	grid-column-gap: 5%;
+	grid-column-gap: 64px;
 	grid-row-gap: 80px;
+}
+.project-images{
+	max-height: 920px;
+	min-height: fit-content;
 }
 .hero {
 	height: 100vh;
@@ -128,6 +132,7 @@ li {
 a {
 	color: var(--font);
 	text-decoration: none;
+	z-index: 0;
 }
 a:active {
 	color: var(--font);
@@ -348,29 +353,44 @@ div.cursor div {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 24px;
-	height: 24px;
-	background-color: var(--font);
+	width: 16px;
+	height: 16px;
+	border:  var(--font) 2px solid;
 	border-radius: 50%;
-	z-index: 10000;
+	z-index: 0;
 	pointer-events: none;
 	transform: translate(-50%, -50%);
 	mix-blend-mode: luminosity;
 }
+
 div.cursor div span {
 	position: absolute;
-	top: -16px;
+	top: -24px;
 	left: 40px;
 	width: 300px;
 	line-height: 24px;
 	color: var(--font);
 	opacity: 0;
 	transition: opacity 0.5s;
-	mix-blend-mode: luminosity;
+	background-color: none;
 }
 div.cursor div span.visible {
 	opacity: 1;
 }
+  /* Hide the cursor when hovering over an image */
+div.cursor.left div span.visible {
+	left: auto;
+	right: 40px;
+	text-align: right;
+  }
+  
+  /* Hide the cursor when hovering over an image */
+  img[data-hover]:hover {
+	cursor: none;
+  }
+  
+
+
 footer {
 	width: 90%;
 	height: auto;
@@ -383,32 +403,7 @@ footer p {
 	font-size: 12px;
 	margin-top: 40px;
 }
-.footer-project {
-	font-family: eloquent-jf-pro, serif;
-	margin: 0px;
-	width: 95%;
-	padding: 0% 2.5%;
-	overflow-x: scroll;
-	white-space: nowrap;
-	float: center;
-	scroll-snap-align: center ; 
-	scroll-snap-type: x mandatory;
-	scroll-behavior: smooth;
 
-}
-.footer-project .footer-img {
-	width: calc(100% / 3 + 140px);
-	display: inline-grid;
-	margin: 0px 18px;
-	scroll-snap-align: center;
-}
-.footer-img img {
-	width: 100%;
-	height: 340px;
-	object-fit: cover;
-}
-.footer-project:hover > .footer-img { opacity: 50%;}
-.footer-project:hover > .footer-img:hover { opacity: 100%;}
 
 ::-webkit-scrollbar {
 	width: 0px;
@@ -447,18 +442,6 @@ footer p {
 		.project-left-large .project-left-small .project-right-large .project-right-small, .text-on-hover {display: block; opacity: 1;}
 		div.cursors div span.visible {opacity: 0;}
 		.text-on-hover { opacity: 1; margin-top: -20px;}
-
-		/* \/ footer project \/ */
-		.footer-img img {
-			height: 240px;
-		}
-		.footer-project .project-title {display: block; white-space: initial;}
-		/* \/ footer project \/ */
-		@keyframes parallax {
-			to {
-			  transform: none;
-			}
-		  }
 		
 }
 	/* | EXTRA SMALL (small phone) | */
