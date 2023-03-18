@@ -27,11 +27,14 @@
 	animation-duration: 1s;
 	z-index: 2;
 	min-height: 100%;
+  	overflow: hidden;
 }
 .project-image-hero img {
 	width: 100%;
 	height: 100%;
 	object-position: top;
+  	position: relative;
+  	transform: translate3d(0, 0, 0);
 }
 
   /* \/ Porject Pages image gallary \/ */
@@ -86,6 +89,33 @@
 .project-gallery-parent img {
 	margin-top: 40px;
 }
+
+.footer-project {
+	font-family: eloquent-jf-pro, serif;
+	margin: 0px;
+	width: 95%;
+	padding: 0% 2.5%;
+	overflow-x: scroll;
+	white-space: nowrap;
+	float: center;
+	scroll-snap-align: center ; 
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+
+}
+.footer-project .footer-img {
+	width: calc(100% / 3 + 140px);
+	display: inline-grid;
+	margin: 0px 18px;
+	scroll-snap-align: center;
+}
+.footer-img img {
+	width: 100%;
+	height: 340px;
+	object-fit: cover;
+}
+.footer-project:hover > .footer-img { opacity: 50%;}
+.footer-project:hover > .footer-img:hover { opacity: 100%;}
   
 @media (min-width: 120px)and (max-width: 820px) {
 	.project-page-parent {
@@ -118,4 +148,15 @@
 	img {
 		height: inherit;
 	}
+	/* \/ footer project \/ */
+	.footer-img img {
+		height: 240px;
+	}
+	.footer-project .project-title {display: block; white-space: initial;}
+	/* \/ footer project \/ */
+	@keyframes parallax {
+		to {
+		  transform: none;
+		}
+	  }
 }
