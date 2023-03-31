@@ -73,34 +73,58 @@ window.addEventListener('scroll', () => {
 });
 });
 
+// parallax \/
+document.addEventListener('DOMContentLoaded', function() {
+  const projectGallery = document.querySelector('body');
+const parallaxSections = document.querySelectorAll('.parallax-section');
 
-//parallaxing effect \/
-(function () {
-    const bg_parallax = document.getElementsByClassName("bg_parallax"); Array.prototype.forEach.call(bg_parallax, function (el) {
-      let bgPos = {
-        x: 50,
-        y: 50
-      };
-      const delta = -0.005;
-      let reactToTweenUpdate = () => {
-        let winW = window.innerWidth / 2;
-        let winH = window.innerHeight / 2;
-        el.style.backgroundPosition = `${50 - (bgPos.x - winW) * delta}% ${
-          50 - (bgPos.y - winH) * delta
-        }%`;;
-      };
-      let tween = new TweenMax(bgPos, 0.9, {
-        onUpdate: () => reactToTweenUpdate(),
-        ease: Power4.easeOut    
-      });
-      el.onmousemove = function (event) {
-        tween.updateTo(
-          {
-            x: event.clientX,
-            y: event.clientY
-          },
-          true
-        );
-      };
+function parallaxEffect() {
+const scrollPosition = window.pageYOffset;
+const windowHeight = window.innerHeight;
+
+parallaxSections.forEach(section => {
+  const sectionTop = section.offsetTop;
+  const sectionHeight = section.offsetHeight;
+
+  const sectionInView = scrollPosition > sectionTop - windowHeight;
+  const sectionOutView = scrollPosition > sectionTop + sectionHeight;
+
+  if (sectionInView && !sectionOutView) {
+    const projects = section.querySelectorAll('.parallax');
+
+    projects.forEach((project) => {
+      const speed = project.getAttribute('data-speed');
+      const yPos = -(scrollPosition - sectionTop + windowHeight) * speed;
+
+      project.style.transform = `translate3d(0, ${yPos}px, 0)`;
     });
-  })();
+  } else {
+    // reset transform property to its default value when section is out of view
+    projects.forEach(project => {
+      project.style.transform = 'none';
+    });
+  }
+});
+}
+
+// Add scroll event listener only when screen width is above 768px
+if (window.innerWidth >= 768) {
+window.addEventListener('scroll', parallaxEffect);
+}
+
+// Remove scroll event listener when screen width is below 768px
+window.addEventListener('resize', () => {
+if (window.innerWidth < 768) {
+  window.removeEventListener('scroll', parallaxEffect);
+  // reset transform property to its default value when window is resized below 768px
+  parallaxSections.forEach(section => {
+    const projects = section.querySelectorAll('.parallax');
+    projects.forEach(project => {
+      project.style.transform = 'none';
+    });
+  });
+} else {
+  window.addEventListener('scroll', parallaxEffect);
+}
+});
+});
