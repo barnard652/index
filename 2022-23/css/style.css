@@ -42,7 +42,7 @@ body {
 	transition-timing-function: ease-in-out;
 	counter-reset: counter;
 	padding-bottom: env(safe-area-inset-botttom);
-	cursor: none;
+	/* cursor: none; */
 }
 .parent {
 	width: 90%;
@@ -192,21 +192,11 @@ h1 {
 }
 .about-image {
 	grid-area: 2 / 1 / 6 / 6;
-	animation: parallax 1s linear infinite;
-	animation-play-state: paused;
-	animation-delay: calc(var(--scroll) * -1s);
-	animation-iteration-count: 1;
-	animation-fill-mode: both;
 }
 .about-text {
 	grid-area: 3 / 5 / 5 / 13;
 	display: inline-grid;
 	max-width: 1000px;
-	animation: parallax .5s linear infinite;
-	animation-play-state: paused;
-	animation-delay: calc(var(--scroll) * -1s);
-	animation-iteration-count: 1;
-	animation-fill-mode: both;
 }
 .dot-box {
 	grid-area: 5 / 4 / 7 / 8;
@@ -243,39 +233,48 @@ h1 {
 	background-size: 100% 8%;
 }
 /* \/ Project Gallary \/*/
-.parent img {
+.project-gallery {
+	width: 90%;
+	max-height: auto;
+	margin-left: 5%; 
+	margin-right: 5%;
+	display: inline-block;
+}
+.project-gallery img {
 	width: 100%;
 	object-fit: cover;
-	transition: transform .2s;
+	transition: transform 1s ease-out;
+}
+.project-gallery img:hover {  
+	transform: scale(0.99);
 }
 .project-left-small {
-	grid-area: 2 / 1 / 5 / 6;
+	width:40%;
 	height: fit-content;
-	animation: parallax .4s linear infinite;
-
+	float: left;
+	padding-right:2.5%;
 }
 .project-right-large {
-	grid-area: 2 / 6 / 6 / 13;
-	height: fit-content;
-	animation: parallax 1s linear infinite;
-
+	width:55%;
+	height:fit-content;
+	float:right;
+	padding-left:2.5%;
 }
 .project-left-large {
-	grid-area: 2 / 1 / 6 / 8;
+	width:55.5%;
 	height: fit-content;
-	animation: parallax .5s linear infinite;
-
+	float:left;
+	padding-right:2.5%;
 }
 .project-right-small {
-	grid-area: 2 / 8 / 5 / 13;
+	width:39.5%;
 	height: fit-content;
-	animation: parallax .7s linear infinite;
+	float:right;
+	padding-left:2.5%;
 }
 .project-left-small, .project-right-large, .project-left-large, .project-right-small {
-	animation-play-state: paused;
-	animation-delay: calc(var(--scroll) * -1s);
-	animation-iteration-count: 1;
-	animation-fill-mode: both;
+	margin-bottom: 200px;
+	display: inline-block;
 }
 img {
     object-fit: cover;
@@ -286,15 +285,18 @@ img {
 	position: sticky;
 	top:0px;
 	z-index:999;
-
 }
 /* \/  Text appear under gallary image on hover  \/ */
-.text-on-hover { opacity: 0; font-size: 18px;}
+.text-on-hover {padding-top: 15px; opacity: 0; font-size: 18px;}
 .project-left-large:hover .text-on-hover {opacity: 1; transition: opacity 0.5s;}
 .project-left-small:hover .text-on-hover {opacity: 1; transition: opacity 0.5s;}
 .project-right-large:hover .text-on-hover {opacity: 1;	transition: opacity 0.5s;}
 .project-right-small:hover .text-on-hover {opacity: 1;	transition: opacity 0.5s;}
-.project-left-large .project-left-small .project-right-large .project-right-small, .project-title {display: none;}
+.project-left-large .project-left-small .project-right-large .project-right-small, .project-title {
+	margin-bottom: 10px; 
+	display: none; 
+	font-family: eloquent-jf-pro, serif;
+}
 /* \/  Dot BG in CSS  \/ */
 .dot-container{
   	width: 100%;
@@ -346,8 +348,6 @@ a .project-text:hover .underline {
 	background-size: 110% 80%;
 	color: var(--font-highlight);
 }
-/* -/\- Text underline animation -/\- */
-
 /* mouses styling */
 div.cursor div {
 	position: absolute;
@@ -360,9 +360,9 @@ div.cursor div {
 	z-index: 0;
 	pointer-events: none;
 	transform: translate(-50%, -50%);
+	transition: opacity 1s;
 	mix-blend-mode: luminosity;
 }
-
 div.cursor div span {
 	position: absolute;
 	top: -24px;
@@ -371,7 +371,7 @@ div.cursor div span {
 	line-height: 24px;
 	color: var(--font);
 	opacity: 0;
-	transition: opacity 0.5s;
+	transition: opacity 1s;
 	background-color: none;
 }
 div.cursor div span.visible {
@@ -388,9 +388,6 @@ div.cursor.left div span.visible {
   img[data-hover]:hover {
 	cursor: none;
   }
-  
-
-
 footer {
 	width: 90%;
 	height: auto;
@@ -403,48 +400,41 @@ footer p {
 	font-size: 12px;
 	margin-top: 40px;
 }
-
-
 ::-webkit-scrollbar {
 	width: 0px;
 }
-	/* | SMALL (phone) | */
-	@media (min-width: 120px)and (max-width: 620px) {
-		.parent {
-			display: flow-root;
-			grid-template-columns: repeat(4, 1fr);
-			grid-template-rows: repeat(8, 1fr);
-			grid-column-gap: 0;
-			grid-row-gap: 0;
-			height: auto;
-			max-height: none;
-			min-height: fit-content;
-		}
-		.mobile-spacing{display: inline-block; width:100%; height: 250px;}
-		.hero {min-height: 100vh;}
-		.hero-text .small-text {line-height: 6vw; font-size: 4vw; margin-top: 80px; margin-bottom: 24px;}
-		.hero-text {grid-area: 3 / 1 / 5 / 5; }
-		.hero-text h1 {line-height: 12vh; font-size: 10vh;}
-		.about-image {animation: none}
-		.about-text {animation: none}
+	/* | MEDUIM (Phone/Tablet) | */
+@media (min-width: 768px) and (max-width: 960px) {
 
-		.parent, img {height: 340px;}
-		.box-image { grid-area: none;  }
-		.body-text { grid-area: none;  }
-		.dot-box { display: none; }
-		.project-left-large { grid-area: none; padding-bottom: 80px; animation: none; }
-		.project-right-small { grid-area: none;  padding-bottom: 80px; animation: none; }
-		.project-left-small { grid-area: none;  padding-bottom: 80px; animation: none; }
-		.project-right-large { grid-area: none; padding-bottom: 80px; animation: none; }
-
-		/* \/ project title appear under image only on moblie \/ */
-		.project-left-large .project-left-small .project-right-large .project-right-small, .project-title {display: block;}
-		.project-left-large .project-left-small .project-right-large .project-right-small, .text-on-hover {display: block; opacity: 1;}
-		div.cursors div span.visible {opacity: 0;}
-		.text-on-hover { opacity: 1; margin-top: -20px;}
-		
 }
-	/* | EXTRA SMALL (small phone) | */
-	@media (max-width: 388px) {
 
+	/* | SMALL (Phone) | */
+@media (max-width: 768px) {
+	.parent {
+		display: flow-root;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(8, 1fr);
+		grid-column-gap: 0;
+		grid-row-gap: 0;
+		height: auto;
+		max-height: none;
+		min-height: fit-content;
+	}
+	.mobile-spacing{display: inline-block; width:100%; height: 250px;}
+	.hero {min-height: 100vh;}
+	.hero-text .small-text {line-height: 6vw; font-size: 4vw; margin-top: 80px; margin-bottom: 24px;}
+	.hero-text {grid-area: 3 / 1 / 5 / 5; }
+	.hero-text h1 {line-height: 14vw; font-size: 10vw;}
+	.box-image { grid-area: none;  }
+	.body-text { grid-area: none;  }
+	.dot-box { display: none; }
+	.project-left-small, .project-right-large, .project-left-large, .project-right-small {width:100%;}
+	.project-left-small, .project-right-large, .project-left-large, .project-right-small, img {height:40vh; object-fit: cover; float:center;}
+
+	/* \/ project title appear under image only on moblie \/ */
+	.project-left-large .project-left-small .project-right-large .project-right-small, .project-title {display: block;}
+	.project-left-large .project-left-small .project-right-large .project-right-small, .text-on-hover {display: block; opacity: 1;}
+	div.cursors div span.visible {opacity: 0;}
+	.text-on-hover { opacity: 1; margin-top: -20px;}
+		
 }
