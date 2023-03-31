@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/animation.css">
 <!-- \/ JS FILES \/ -->
 <script src="js/main.js"></script>
+<script src="js/parallax.js"></script>
 <link rel="stylesheet" href="https://use.typekit.net/ssq7tuz.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -29,7 +30,7 @@
       </div>
     </li>
   </header>
-  <!-- Hero Section V1-->
+  <!-- Hero Section -->
 <div class="parent hero">
   <div class="hero-text">
     <div class="small-text">Hi, am a <a class="underline" id="graphic" href="">Graphic Designer</a>*</div>
@@ -84,13 +85,13 @@
 	</div>
 </div>
 <div class="mobile-spacing"></div>
-<div class="parent">
+<div class="parent parallax-section">
   <a name="about-me"></a>
-  <div class="about-image" style="z-index:-1; ">
+  <div class="about-image parallax" data-speed="0.1" style="z-index:-1;">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_lyl7bziu.json" background="transparent"  speed="1"  style="height: 100%; width: 100%;" hover loop autoplay></lottie-player>
   </div>
-  <div class="about-text">
+  <div class="about-text" data-speed="-0.1">
     <h3>Hi, I’m a graphic designer based in the UK looking to take the next step in my career as a designer. I have worked with and managed the designs of many clients, from startups to international brands. Creating digital ordering systems, user interfaces, and website designs/assets as well as branding for new projects, services, and companies by managing short deadlines and client briefs along the way.</br></br>My work has become refined and adaptable over the years as my roles have changed and developed, allowing me to quickly change work to meet clients’ specifications, changing deadlines, or new design trends. I am always looking for new creative projects, looking to learn new skills and add to my growing portfolio.</h3>
     <nav>
       <ul>
@@ -101,76 +102,65 @@
   </div>
   <div class="dot-box"></div>
 </div>
-  <div class="mobile-spacing"></div>
-  <div class="sticky-header"><h2>View Some of My Work</h2></div>
-<div class="parent project-images">
-  <a name="work"></a>
-  <div class="project-left-small">
-    <a href="project-page/spark.html">
-    <img src="https://matthew-barnard.com/img/spark/falling-business-card-mockups.jpg" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>SPARK<br/>Metal Fabrications Branding</h2>">
-    <h2 class="project-title">SPARK, Metal Fabrications Branding</h2>
-    <div class="text-on-hover">Photoshop, illustrator, Branding, Logo Design.</div>
-    </a>
-  </div>
-  <div class="dot-box" style="grid-area: 3 / 2 / 6 / 7; height:auto;"></div>
-  <div class="project-right-large">
-    <a href="project-page/buckminster-gliding-club.html">
+<a name="work"></a>
+<div class="mobile-spacing"></div>
+<div class="project-gallery parallax-section">
+  <div class="sticky-header parallax" data-speed="0.5"><h2>View Some of My Work</h2></div>
+  <a href="project-page/spark.html">
+    <div class="project-left-small parallax" data-speed="0.5">
+      <img src="https://matthew-barnard.com/img/spark/falling-business-card-mockups.jpg"  onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>SPARK, Metal Fabrications Branding</h2>">
+      <h2 class="project-title">SPARK, Metal Fabrications Branding</h2>
+      <div class="text-on-hover">Photoshop, illustrator, Branding, Logo Design.</div>
+    </div>
+  </a>
+  <a href="project-page/buckminster-gliding-club.html">
+    <div class="project-right-large parallax" data-speed="0.3">
       <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/c6841f100072951.5f00c23593612.jpg" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Buckminster Gliding Club Visual Identaty</h2>">
       <h2 class="project-title">Buckminster Gliding Club Visual Identaty</h2>
       <div class="text-on-hover">illustrator, InDesign, Word Press, Brand Design, Branding.</div>
-    </a>
-  </div>
-</div>
-<div class="parent project-images">
-  <div class="project-left-large">
-    <a href="project-page/big-blue-sea.html">
-      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/513a9676607857.5e43e901800d8.png" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Big Blue Sea<br/>Visual Identity</h2>">
+    </div>
+  </a>
+  <a href="project-page/big-blue-sea.html">
+    <div class="project-left-large parallax" data-speed="0.4">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/513a9676607857.5e43e901800d8.png" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Big Blue Sea Visual Identity</h2>">
       <h2 class="project-title">Big Blue Sea Visual Identity</h2>
-      <div class="text-on-hover">Photoshop, illustrator, Logo Design.</div>
-    </a>
-  </div>
-  <div class="dot-box" style="grid-area: 5 / 6 / 8 / 11; height:auto;"></div>
-  <div class="project-right-small">
-    <a href="project-page/in-cold-blood.html">
-      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/bd6d2e59182443.5a183e53bf959.jpg" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>In Cold Blood<br/>Penguin Random House Design Award Finalists 2017</h2>">
-      <h2 class="project-title">In Cold Blood, Penguin Random House Design Award Finalists 2017</h2>
-      <div class="text-on-hover">Photoshop, illustrator, Book, Cover Desgin, Type Design</div>
-    </a>
-  </div>
-</div>
-<div class="parent project-images">
-  <div class="project-left-small">
-    <a href="project-page/operating-manual.html">
-      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/0a858159462263.5a231bd8e9094.png" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Operating Manual for Spaceship Earth<br/>Book & Type Design</h2>">
+      <div class="text-on-hover">iPhotoshop, illustrator, Logo Design.</div>
+    </div>
+  </a>
+  <a href="project-page/operating-manual.html">
+    <div class="project-right-small parallax" data-speed="0.2">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/0a858159462263.5a231bd8e9094.png" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Operating Manual for Spaceship Earth, Book & Type Design</h2>">
       <h2 class="project-title">Operating Manual for Spaceship Earth, Book & Type Design</h2>
       <div class="text-on-hover">Photoshop, illustrator, Branding, Logo Design.</div>
-    </a>
-  </div>
-  <div class="dot-box" style="grid-area: 4 / 2 / 7 / 8; height:auto;"></div>
-  <div class="project-right-large">
-    <a href="project-page/swim-app.html">
-      <img src="https://matthew-barnard.com/img/swimming-app/Watch.png" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Swim.io<br/>Swimming App UI and UX Design Concept</h2>">
-      <h2 class="project-title">Swim.io, Swimming App UI and UX Design Concept</h2>
-      <div class="text-on-hover">Adobe Xd, UI/UX Design</div>
-    </a>
-  </div>
-</div>
-<div class="parent ">
-  <div class="project-left-large">
-    <a href="project-page/paper-plane.html">
+    </div> 
+  </a>
+  <a href="project-page/in-cold-blood.html">
+    <div class="project-left-small parallax" data-speed="0.1">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/bd6d2e59182443.5a183e53bf959.jpg"  onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>In Cold Blood, Penguin Random House Design Award Finalists 2017</h2>">
+      <h2 class="project-title">In Cold Blood, Penguin Random House Design Award Finalists 2017</h2>
+      <div class="text-on-hover">Photoshop, illustrator, Book, Cover Desgin, Type Design</div>
+    </div>
+  </a>
+  <a href="project-page/paper-plane.html">
+    <div class="project-right-large parallax" data-speed="0.3">
       <img src="https://matthew-barnard.com/img/Paper%20Plane/Artboard%201-100.jpg" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Paper Plane Flight Logging System for GA & Glider.</h2>">
       <h2 class="project-title">Paper Plane Flight Logging System for GA & Glider.</h2>
       <div class="text-on-hover">Adobe Xd, Figma, Website Design, UI / UX.</div>
-    </a>
-  </div>
-  <div class="dot-box" style="grid-area: 3 / 4 / 5 / 9; height:auto;"></div>
-  <div class="project-right-small">
-    <a href="project-page/reel.html">
-      <img src="https://media2.giphy.com/media/xDngybRvcRExehxw7a/giphy.gif" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Motion Graphics & Animatio</h2>">
+    </div>
+  </a>
+  <a href="project-page/motion.html">
+    <div class="project-left-large parallax" data-speed="0.2">
+      <img src="https://media2.giphy.com/media/xDngybRvcRExehxw7a/giphy.gif" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Motion Graphics & Animation</h2>">
       <h2 class="project-title">Motion Graphics & Animation</h2>
       <div class="text-on-hover">Motion Desgin, Animation, After Effect, illustraton.</div>
-    </a>
-  </div>
+    </div>
+  </a>
+  <a href="project-page/swim-app.html">
+    <div class="project-right-small parallax" data-speed="0">
+      <img src="https://matthew-barnard.com/img/swimming-app/Watch.png" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" data-hover="<h2>Swim.io, Swimming App UI and UX Design Concept</h2>">
+      <h2 class="project-title">Swim.io, Swimming App UI and UX Design Concept</h2>
+      <div class="text-on-hover">Adobe Xd, UI/UX Design</div>
+    </div> 
   </a>
 </div>
 <footer>
@@ -210,7 +200,6 @@
 		</a>
 	</div>
   <p>©2022 Website design and build by <a href="mailto:barnardmatthew92@gmal.com" class="underline">Matthew Barnard</a></p>
-</div>
 </footer>
  <!-- Cursors replacment V1 -->
 <div class="cursor">
