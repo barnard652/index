@@ -98,12 +98,7 @@ parallaxSections.forEach(section => {
 
       project.style.transform = `translate3d(0, ${yPos}px, 0)`;
     });
-  } else {
-    // reset transform property to its default value when section is out of view
-    projects.forEach(project => {
-      project.style.transform = 'none';
-    });
-  }
+  } 
 });
 }
 

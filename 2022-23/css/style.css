@@ -56,12 +56,26 @@ body {
 	grid-column-gap: 64px;
 	grid-row-gap: 80px;
 }
+section {
+	width: 90%;
+	height: fit-content;
+	margin-left: 5%; 
+	margin-right: 5%;
+	display: block;
+}
 .project-images{
 	max-height: 920px;
 	min-height: fit-content;
 }
 .hero {
 	height: 100vh;
+}
+.min-hero {
+	min-height: 25vh;
+	max-width: 50%;
+	padding-bottom: 5vh;
+	padding-top: 10vh;
+	display: block;
 }
 /* \/ Header section \/ */
 header {
@@ -100,7 +114,7 @@ header {
 }
 .burger-bar1, .burger-bar2, .burger-bar3 {
 	width: 32px;
-	height: 2px;
+	height: 1px;
 	background-color: var(--font);
 	margin: 8px 0;
 	transition: 0.4s;
@@ -199,7 +213,6 @@ h1 {
 	max-width: 1000px;
 }
 .dot-box {
-	grid-area: 5 / 4 / 7 / 8;
 	background-image: radial-gradient(circle, var(--font) 10%, transparent 10%), radial-gradient(circle, var(--font) 10%, transparent 10%);
 	background-size: 12px 12px;
 	background-position: 0 0, 0 0;
@@ -219,11 +232,11 @@ h1 {
 	height: 2em;
 }
 .social-icons.underline {
-	background-size: 50% 15%;
+	background-size: 50% 10%;
 	background-position: 0 75%;
 }
 .social-icons.underline:hover {
-	background-size: 100% 15%;
+	background-size: 100% 10%;
 }
 .hero-text h1 .underline {
 	background-size: 0% 8%;
@@ -243,10 +256,12 @@ h1 {
 .project-gallery img {
 	width: 100%;
 	object-fit: cover;
-	transition: transform 1s ease-out;
 }
 .project-gallery img:hover {  
 	transform: scale(0.99);
+}
+.parallax {
+	transition: transform 0.5s ease;
 }
 .project-left-small {
 	width:40%;
@@ -320,7 +335,7 @@ img {
 	padding: 5px;
 	background-image: linear-gradient(120deg, var(--hero-color) 0%, var(--hero-color)100%);
 	background-repeat: no-repeat;
-	background-size: 80% 15%;
+	background-size: 80% 10%;
 	background-position: 0 60%;
 	transition: background-size 0.25s ease-in;
 	-webkit-box-decoration-break: clone;
@@ -329,7 +344,7 @@ img {
 	box-decoration-break: clone;
 }
 .underline:hover {
-	background-size: 110% 15%;
+	background-size: 110% 10%;
 }
 p .underline {
 	background-position: 0 70%;
@@ -424,7 +439,7 @@ footer p {
 	.hero {min-height: 100vh;}
 	.hero-text .small-text {line-height: 6vw; font-size: 4vw; margin-top: 80px; margin-bottom: 24px;}
 	.hero-text {grid-area: 3 / 1 / 5 / 5; }
-	.hero-text h1 {line-height: 14vw; font-size: 10vw;}
+	h1 {line-height: 14vw; font-size: 10vw;}
 	.box-image { grid-area: none;  }
 	.body-text { grid-area: none;  }
 	.dot-box { display: none; }

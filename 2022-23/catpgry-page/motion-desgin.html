@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Matthew Barnard | Graphic Designer</title>
+<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+<!-- \/ CSS FILES \/ -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/category-page-style.css">
+<link rel="stylesheet" href="../css/animation.css">
+<!-- \/ JS FILES \/ -->
+<script src="../js/main.js"></script>
+
+<link rel="stylesheet" href="https://use.typekit.net/ssq7tuz.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+        <li class="dropdown header-nav" onmouseover="NavBurger(this)" onmouseout="NavBurger(this)">
+          <ul class="dropdown-content">
+            <li><h3><a href="/index" class="underline">Home</a></h3></li>
+            <li><h3><a href="/about" class="underline">About</a></h3></li>
+            <li><h3><a href="/stuff" class="underline">Stuff</a></h3></li>
+            <li><h3><a href="mailto:barnardmatthew92@gmail.com" class="underline">Contact</a></h3></li>
+          </ul>
+          <div class="burger-container">
+            <div class="burger-bar1"></div>
+            <div class="burger-bar2"></div>
+            <div class="burger-bar3"></div>
+          </div>
+        </li>
+    </header>
+      <!-- Hero Section -->
+    <div class="parent min-hero parallax-section">
+        <div class="hero-text parallax" style="margin-top: 80px;">
+        <h1>Motion Design & Animation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur. Faucibus feugiat non fringilla sit aliquet id ipsum eget. Vulputate eros elementum aliquam commodo vulputate. Varius lacus vel magna tincidunt nunc. Et.</p>
+        </div>
+    </div>
+    <div id="carousel-countainer">
+        <div class="carousel-img" onmouseover="toggleTheme()" onMouseOut="toggleTheme()">
+            <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1492&q=80" data-hover="<h2>Vist mt Fuju</h2><p>Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of Tokyo. Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 meters. A pilgrimage site for centuries, it’s considered one of Japan’s 3 sacred mountains, and summit hikes remain a popular activity.click to find out more</p>">
+            <div class="img-info">
+                <h3>image 1</h3>
+                <p>some text here</p>
+            </div>
+        </div>
+        <div class="carousel-img">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+            <div class="img-info">
+                <h3>image 1</h3>
+                <p>description of image will go here</p>
+            </div>
+        </div>
+        <div class="carousel-img">
+            <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+            <div class="img-info">
+                <h3>image 1</h3>
+                <p>description of image will go here</p>
+            </div>
+        </div>
+        <div class="carousel-img">
+            <img src="https://images.unsplash.com/photo-1554797589-7241bb691973?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80">
+            <div class="img-info">
+                <h3>image 1</h3>
+                <p>description of image will go here</p>
+            </div>
+        </div>
+        <div class="carousel-img">
+            <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w">
+            <div class="img-info">
+                <h3>image 1</h3>
+                <p>description of image will go here</p>
+            </div>
+        </div>
+        <div class="carousel-img">
+            <img src="https://images.unsplash.com/photo-1491884662610-dfcd28f30cfb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+                <div class="img-info">
+                <h3>image 1</h3>
+                <p>description of image will go here</p>
+            </div>
+        </div>
+    </div>
+    <script>
+const section = document.querySelector('#carousel-countainer');
+let scrollPosition = 0;
+
+window.addEventListener('wheel', (event) => {
+  event.preventDefault(); // Prevent default scrolling behavior
+
+  // Calculate the mouse position relative to the section
+  const mouseX = event.clientX - section.offsetLeft;
+  const mouseY = event.clientY - section.offsetTop;
+
+  // Invert the scrolling direction
+  const invertedDelta = event.deltaY * -1;
+
+  // Increase or decrease the scroll position based on the mouse position and inverted scroll wheel delta
+  scrollPosition += invertedDelta * Math.sign(mouseX - section.clientWidth / 2);
+
+  // Clamp the scroll position to the bounds of the section
+  scrollPosition = Math.max(0, Math.min(scrollPosition, section.scrollWidth - section.clientWidth));
+
+  // Set the new scroll position
+  section.scrollLeft = scrollPosition;
+});
+
+
+    </script>
+    <div class="cursor">
+        <div>
+            <span></span>
+        </div>
+    </div>
+    <script src="../js/cursor.js"></script>
+</body>

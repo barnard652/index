@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#carousel-countainer {
+  position:relative;
+  bottom:0px;
+  margin: 0px;
+  margin-right: 5%;
+  width: 100%;
+  height: auto;
+  overflow-x: scroll;
+  display:inline-block;
+  white-space: nowrap;
+  scroll-snap-align: center;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  transition: scroll-left 0.2s ease-out;
+}
+.carousel-img {
+  width:fit-content;
+  display: inline-block;
+  margin-left: 5%;
+  scroll-snap-align: center;
+}
+.carousel-img img {
+  height:55vh;
+  transition: ease 0.8s;
+  transition-delay: 0s;
+  margin: auto;
+}
+
+.carousel-img img:hover {
+    height: 55vh;
+  }
+.carousel-img:hover > .carousel-img { opacity: 50%;}
+.carousel-img:hover > .carousel-img img:hover { opacity: 100%;}
+
+.img-info {
+  height:fit-content;
+  background-color: pink;
+  white-space: wrap;
+  word-wrap: break-word;
+  display: none;
+} 
+/* Scoll Bar 
+::-webkit-scrollbar {
+  width: 4px;
+  height:4px;
+}
+/* Track
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+/* Handle 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+/* Handle on hover 
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+*/
+/* | SMALL (Phone) | */
+@media (max-width: 768px) {
+    .carousel-img{
+        display: block;
+        margin: 5%;
+    }
+    .carousel-img img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .img-info {
+        display: block;
+      } 
+}
