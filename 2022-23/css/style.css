@@ -71,8 +71,9 @@ section {
 	height: 100vh;
 }
 .min-hero {
+	width: 90%;
+	max-width: 1000px;
 	min-height: 25vh;
-	max-width: 50%;
 	padding-bottom: 5vh;
 	padding-top: 10vh;
 	display: block;
@@ -290,10 +291,20 @@ h1 {
 .project-left-small, .project-right-large, .project-left-large, .project-right-small {
 	margin-bottom: 200px;
 	display: inline-block;
+	text-align: center;
 }
 img {
     object-fit: cover;
 }
+/* \/ max size of the image on XXL Screens  \/ */
+.project-left-small img, .project-right-large img, .project-left-large img, .project-right-small img {
+	max-width: 960px;
+	max-height: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	
+} 
 .sticky-header {
 	width: 90%;
 	padding: 2.5%;
@@ -342,6 +353,7 @@ img {
 	-ms-box-decoration-break: clone;
 	-o-box-decoration-break: clone;
 	box-decoration-break: clone;
+	white-space: nowrap;
 }
 .underline:hover {
 	background-size: 110% 10%;
@@ -389,6 +401,7 @@ div.cursor div span {
 	transition: opacity 1s;
 	background-color: none;
 }
+div.cursor div span p {line-height: 20px; margin-top: -15px;}
 div.cursor div span.visible {
 	opacity: 1;
 }

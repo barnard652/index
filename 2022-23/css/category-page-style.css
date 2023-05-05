@@ -19,18 +19,18 @@
 .carousel-img {
   width:fit-content;
   display: inline-block;
-  margin-left: 5%;
+  margin-left: 40px;
   scroll-snap-align: center;
 }
 .carousel-img img {
-  height:55vh;
+  height:40vh;
   transition: ease 0.8s;
   transition-delay: 0s;
   margin: auto;
 }
 
 .carousel-img img:hover {
-    height: 55vh;
+    height: 45vh;
   }
 .carousel-img:hover > .carousel-img { opacity: 50%;}
 .carousel-img:hover > .carousel-img img:hover { opacity: 100%;}
@@ -63,8 +63,10 @@
 /* | SMALL (Phone) | */
 @media (max-width: 768px) {
     .carousel-img{
+        width: 90%;
         display: block;
         margin: 5%;
+        white-space: normal;
     }
     .carousel-img img {
         height: 500px;

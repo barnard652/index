@@ -49,29 +49,6 @@ function NavBurger(x) {
    x.classList.toggle("NavBurgerAnimation");
 }
 
-// Project image hero changes scale as the user scolls past it \/
-window.addEventListener('DOMContentLoaded', () => {
-  const img = document.querySelector('.image-container img');
-
-  window.addEventListener('scroll', () => {
-const img = document.querySelector('.project-image-hero img');
-
-window.addEventListener('scroll', () => {
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  const imgTop = img.offsetTop;
-  const imgHeight = img.offsetHeight;
-  const windowHeight = window.innerHeight;
-  
-  // calculate the scale based on the distance from the top of the image to the top of the viewport
-  const distance = scrollTop + windowHeight - imgTop;
-  const maxScale = 1.5; // set the maximum scale value
-  const scale = Math.min(1 + distance / windowHeight, maxScale); // limit the scale value to the maximum
-  
-  // apply the scale to the image
-  img.style.transform = `scale(${scale})`;
-});
-});
-});
 
 // parallax \/
 document.addEventListener('DOMContentLoaded', function() {
