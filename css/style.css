@@ -83,8 +83,7 @@ header {
 #logo {
 	width: 64px;
 	height: 100%;
-	background-color: pink;
-	display: block;
+	display: none;
 	float: left;
 	align-items: center;
 }
