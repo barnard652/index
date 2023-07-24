@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Matthew Barnard | illustration</title>
+<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+<!-- \/ CSS FILES \/ -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/category-page-style.css">
+<link rel="stylesheet" href="../css/animation.css">
+<!-- \/ JS FILES \/ -->
+<script src="../js/main.js"></script>
+
+<link rel="stylesheet" href="https://use.typekit.net/ssq7tuz.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+        <li class="dropdown header-nav" onmouseover="NavBurger(this)" onmouseout="NavBurger(this)">
+          <ul class="dropdown-content">
+            <li><h3><a href="/index" class="underline">Home</a></h3></li>
+            <li><h3><a href="/about" class="underline">About</a></h3></li>
+            <li><h3><a href="/stuff" class="underline">Stuff</a></h3></li>
+            <li><h3><a href="mailto:barnardmatthew92@gmail.com" class="underline">Contact</a></h3></li>
+          </ul>
+          <div class="burger-container">
+            <div class="burger-bar1"></div>
+            <div class="burger-bar2"></div>
+            <div class="burger-bar3"></div>
+          </div>
+        </li>
+    </header>
+      <!-- Hero Section -->
+    <div class="parent min-hero parallax-section">
+        <div class="hero-text parallax" style="margin-top: 80px;">
+        <h1>illustrations</h1>
+        <p></p>
+        </div>
+    </div>
+    <div id="carousel-countainer">
+        <div class="carousel-img" onmouseover="toggleTheme()" onMouseOut="toggleTheme()" style="margin-left: 5%;">
+            <img src="https://github.com/barnard652/index/blob/master/img/Illustation-Image.png?raw=true" data-hover="<h2>Vinyl Collection</h2><p>Simple 3d illustration</p>">
+            <div class="img-info">
+                <h3>Vinyln Collection</h3>
+                <p>Simple 3d illustration</p>
+            </div>
+        </div>
+        <div class="carousel-img" onmouseover="toggleTheme()" onMouseOut="toggleTheme()")>
+            <img src="https://i.giphy.com/media/1YaYwvueDztl6nWXyW/giphy.webp" data-hover="<h2>Finder icon</h2><p>Practice eye movement and tracking to create simple emotion with a female face as a mac user.</p>">
+            <div class="img-info">
+                <h3>Finder icon</h3>
+                <p>Practice eye movement and tracking to create simple emotion with a female face as a mac usere</p>
+            </div>
+        </div>
+        <div class="carousel-img" onmouseover="toggleTheme()" onMouseOut="toggleTheme()") style="margin-right: 5%">
+            <a href="../project-page/swim-app.html">
+                <img src="https://www.instagram.com/p/Bhw67jPn7Ac/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==/media/?size=l" data-hover="<h2>Swim.io</h2><p>Consept splace screen for a swimmign app design</br>Click to view the project</p>">
+            </a>
+            <div class="img-info">
+                <h3>Swim.io</h3>
+                <p>Experimenting eiht the power of comps and diffrent effect to create a relistic basketball</p>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+const section = document.querySelector('#carousel-countainer');
+let scrollPosition = 0;
+
+window.addEventListener('wheel', (event) => {
+  event.preventDefault(); // Prevent default scrolling behavior
+
+  // Calculate the mouse position relative to the section
+  const mouseX = event.clientX - section.offsetLeft;
+  const mouseY = event.clientY - section.offsetTop;
+
+  // Invert the scrolling direction
+  const invertedDelta = event.deltaY * -1;
+
+  // Increase or decrease the scroll position based on the mouse position and inverted scroll wheel delta
+  scrollPosition += invertedDelta * Math.sign(mouseX - section.clientWidth / 2);
+
+  // Clamp the scroll position to the bounds of the section
+  scrollPosition = Math.max(0, Math.min(scrollPosition, section.scrollWidth - section.clientWidth));
+
+  // Set the new scroll position
+  section.scrollLeft = scrollPosition;
+});
+
+
+    </script>
+    <div class="cursor">
+        <div>
+            <span></span>
+        </div>
+    </div>
+    <script src="../js/cursor.js"></script>
+</body>

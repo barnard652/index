@@ -15,14 +15,14 @@
   }, false);
   
   document.getElementById("website").addEventListener("mouseover", function() {
-    document.getElementById("BG").style.backgroundImage = "url(https://github.com/barnard652/index/blob/master/img/stop-writing-shit-code/stop-writting-shit-code.png?raw=true)";
+    document.getElementById("BG").style.backgroundImage = "url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/4bb01e168051529.643420694e70b.png)";
   }, false);
   document.getElementById("website").addEventListener("mouseout", function() {
      document.getElementById("BG").style.backgroundImage = "";
   }, false);
   
   document.getElementById("UI/UX").addEventListener("mouseover", function() {
-    document.getElementById("BG").style.backgroundImage = "url(https://github.com/barnard652/index/blob/master/img/spark/falling-business-card-mockups.jpg?raw=true)";
+    document.getElementById("BG").style.backgroundImage = "url(https://matthew-barnard.com/img/Paper%20Plane/Artboard%203-100.jpg)";
   }, false);
   document.getElementById("UI/UX").addEventListener("mouseout", function() {
      document.getElementById("BG").style.backgroundImage = "";

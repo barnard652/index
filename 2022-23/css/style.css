@@ -70,14 +70,6 @@ section {
 .hero {
 	height: 100vh;
 }
-.min-hero {
-	width: 90%;
-	max-width: 1000px;
-	min-height: 25vh;
-	padding-bottom: 5vh;
-	padding-top: 10vh;
-	display: block;
-}
 /* \/ Header section \/ */
 header {
 	width: 95%;
