@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document */
+/* \/ Animation on load \/*/
+@keyframes StartAnimationRight {
+	0% {
+		transform: translateX(10em);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0em);
+		opacity: 1;
+	}
+}
+@keyframes StartAnimationLeft {
+	0% {
+		transform: translateX(-10em);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0em);
+		opacity: 1;
+	}
+}
+@keyframes StartAnimationBottom {
+	0% {
+		transform: translateY(10em);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0em);
+		opacity: 1;
+	}
+}
+
+/* \/ animation tracking-in-expand \/ */
+@-webkit-keyframes tracking-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  @keyframes tracking-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
+/* \/ animation slide-top \/ */
+@-webkit-keyframes slide-top {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  @keyframes slide-top {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+}
+
+/* \/ parallax animation  \/ */
+@keyframes parallax {
+	to {
+	  transform: translate(0vh, 50vh);
+	}
+}
