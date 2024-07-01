@@ -1,0 +1,37 @@
+
+@font-face {
+    font-family: 'CraftworkGrotesk-heavy';
+    src: url('fonts/craftworkgrotesk-heavy-webfont.woff2') format('woff2'),
+         url('fonts/craftworkgrotesk-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CraftworkGrotesk-bold';
+    src: url('fonts/craftworkgrotesk-bold-webfont.woff2') format('woff2'),
+         url('fonts/craftworkgrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'CraftworkGrotesksemi-semibold';
+    src: url('fonts/craftworkgrotesk-semibold-webfont.woff2') format('woff2'),
+         url('fonts/craftworkgrotesk-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CraftworkGrotesk-medium';
+    src: url('fonts/craftworkgrotesk-medium-webfont.woff2') format('woff2'),
+         url('fonts/craftworkgrotesk-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CraftworkGrotesk-regular';
+    src: url('fonts/craftworkgrotesk-regular-webfont.woff2') format('woff2'),
+         url('fonts/craftworkgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
