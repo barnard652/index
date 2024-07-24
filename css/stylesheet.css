@@ -1,0 +1,690 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.theme-light {
+	--background: #F0F0F0;
+	--accent-color: #CBD5E1;
+	--hero-color: #ee8012;
+	--font: #264653;
+	--font-highlight: #FFFFFF;
+	--text-shawdow: 0px 0px 0px rgba(150, 150, 150, 0);
+	--cursor: #f5f5f5;
+	--browser-color: #274653;
+}
+
+.theme-dark {
+  	--background: #012427;
+	--accent-color: lightgray;
+	--hero-color: #ee8012;
+	--font: #FFFFFF;
+	--font-highlight: #FFFFFF;
+	--text-shawdow: 1px 1px 9px rgba(150, 150, 150, 0.3);
+	--cursor: #f5f5f5;
+	--browser-color: #274653;
+}
+body {
+    margin: 0;
+    font-family: "halogen", 'CraftworkGrotesk-heavy', sans-serif;
+	background-color: var(--background);
+	cursor: none;
+}
+.parent {
+    padding: 40px 0px 0px 40px;
+    margin-left: 120px; /*  <- to compansactes for the side nav  */
+	width: calc(100% - 160px);
+    margin-right: 0;
+	display: inline-block;
+}
+::selection {
+	background-color: var(--hero-color);
+	color: var(--font);
+}
+h1 {
+	font-size: 54px;
+    font-family: "halogen", 'CraftworkGrotesk-heavy', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+	color: var(--font);
+}
+h2 {
+	font-size: 48px;
+    font-family: "halogen", 'CraftworkGrotesk-heavy', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	color: var(--font);
+}
+h3 {
+	font-size: 36px;
+    font-family: "halogen", 'CraftworkGrotesk-heavy', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	color: var(--font);
+}
+h4 {
+	font-size: 20px;
+    font-family: "halogen", 'CraftworkGrotesk-heavy', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	color: var(--font);
+}
+h5 {
+	font-size: 16px;
+    font-family: "halogen", 'CraftworkGrotesk-heavy', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	color: var(--font);
+}
+h6 {
+	font-size: 14px;
+    font-family: "halogen", 'CraftworkGrotesk-heavy', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	color: var(--font);
+}
+p {
+	font-size: 14px;
+    font-family: "halogen", 'CraftworkGrotesk-heavy', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	color: var(--font);
+}
+p .text-sm {
+	font-size: 10px;
+}
+a {
+	color: var(--font);
+	text-decoration: none;
+	z-index: 0;
+	cursor: none;
+}
+a:active {
+	color: var(--font);
+	font-style: normal;
+	cursor: none;
+}
+/* mouses styling */
+div.cursor div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	border:  var(--font) 2px solid;
+	background-color: var(--font);
+	border-radius: 50%;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	mix-blend-mode:color-burn;
+  	opacity:100%;
+  	z-index:9999;
+	transition: width 0.2s, height 0.2s;
+	transition-timing-function: ease-in-out;
+}
+div.cursor div span {
+	position: absolute;
+	top: -24px;
+	left: 40px;
+	width: 300px;
+	line-height: 24px;
+	color: var(--font);
+	opacity: 0;
+	transition: opacity 1s;;
+}
+div.cursor div span.visible {
+	opacity: 1;
+}
+
+div.cursor div.solid-fill {
+	width: 32px;
+	height: 32px;
+	background-color: none;
+	text-align: center;
+}
+  /* swicth the text next to cursor when next to right edge */
+div.cursor.left div span.visible {
+	left: auto;
+	right: 40px;
+	text-align: right;
+}
+/*  \/  side menu  \/  */
+.side-nav {
+    padding: 40px 24px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px); 
+    position: fixed;
+    top: 0;
+    align-self: center;
+    border-right: solid 2px var(--accent-color);
+    font-synthesis: none !important;
+}
+.name {
+    display: block;
+    text-align: right;
+    justify-content: center;
+	z-index: 999;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: auto; 
+    margin-bottom: 0; 
+	display: inline;
+}
+ul li {
+    margin: 15px 24px 0px 20px;
+}
+/*  \/  Change the angle of the text in the side nav  \/  */
+.side-nav .name, .side-nav ul li {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+
+/*  \/  top menu for mobile  \/  */
+.moblie-nav {
+	width: calc(100% - 48px);
+	height: auto;
+	
+	justify-content: space-between;
+	align-items: center;
+ 	margin:0px;
+	padding: 16px 24px;
+	z-index: 999;
+	border-bottom: solid 2px var(--accent-color);
+	display: none;
+	background: var(--background);
+	background-blend-mode: lighten;
+}
+.moblie-nav .name {
+	text-align: left;
+}
+.menu-icon {
+	width: 32px;
+	height: 20px;
+	padding:4px 0px 4px 0px;
+	display: inline-block;
+	z-index:999;
+}
+.line {
+	height: 2px;
+	background-color: var(--font);;
+	display: block;
+	transition: rotate .4s ease, background-color .4s ease, width .2s ease;
+}
+.line-left {
+  	width: 16px;
+}
+.line-center {
+	width: 32px;
+  	margin:6px 0px;
+}
+.line-right {
+  	width: 16px;
+  	float: right;
+}
+.menu-icon:hover .line-left,
+.menu-icon:hover .line-right {
+  width: 24px;
+}
+
+.menu-icon.open .line-left,
+.menu-icon.open .line-right {
+  rotate: 45deg;
+  width: 16px;
+}
+
+.menu-icon.open .line-center {
+  rotate: -45deg;
+}
+.moblie-nav-overlay {
+  	height: 0;
+  	width: 100%;
+	padding: 0px 24px;
+  	background:var(--background);
+  	position: fixed;
+  	z-index: 1;
+ 	top: 0;
+  	left: 0;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+	z-index: 2;
+}
+.moblie-nav-overlay-content {
+  	position: relative;
+  	top: 25%;
+	height: 100%;
+  	width: 100%;
+  	text-align: center;
+  	margin-top: 30px;
+}
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	display: block;
+	transition: 0.3s;
+}
+.moblie-nav-overlay.open {
+  	width: 100%;
+	height: 100%;
+	padding: 104px 24px 0px 24px;
+}
+/*  \/  home page hero section (hero text, images, ect)  \/  */
+.hero {
+	height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text {
+	width: 90%;
+}
+.hero-text h3 {
+	margin-bottom: -32px;
+	padding-left: 8px;
+}
+.hero-img {
+	width: 75%;
+	height:100%;
+	margin-top: 40px;
+	margin-left: 25%;
+	display: flex;
+    align-items: flex-start;
+	background-image: radial-gradient(circle, var(--font) 10%, transparent 10%), radial-gradient(circle, var(--font) 10%, transparent 10%);
+	background-size: 12px 12px;
+	background-position: 0 0, 0 0;
+	transition: 0.5s ease-in;
+	transform: background-image 0.25s ease-in;
+	animation-name: StartAnimationRight;
+	animation-duration: 1s;
+	z-index: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+.hero-img #BG {
+	width: 100%;
+	height: 100%;
+	background-position: top;
+	background-repeat: none;
+	background-size:cover;
+}
+
+/*  \/  Hover line effect for the side nav  \/  */
+.side-nav .underline{
+	background-size: 4px 80%;
+	background-position: 8px 0;
+}
+.side-nav .underline:hover{
+    background-size: 4px 110%;
+}
+.side-nav .underline:active  {
+    background-size: 40px 110%;
+    background-image: linear-gradient(120deg, var(--hero-color) 0%, var(--hero-color)100%);
+    background-position: 0 0;
+    animation-duration: 3s;
+}
+/* \/ social icons \/ */
+.social-container {
+	position: fixed;
+	bottom: 40px;
+	right: 48px;
+	display: inline;
+	float: right;
+	z-index: 999;
+}
+.social-icons {
+	float: right;
+	margin: 20px;
+	width: 2em;
+	height: 2em;
+}
+.social-icons.underline {
+	background-size: 50% 10%;
+	background-position: 0 75%;
+}
+.social-icons.underline:hover {
+	background-size: 100% 10%;
+}
+/* -\/- Text underline animation -\/- */
+.underline {
+	display: inline;
+	padding: 5px;
+	background-image: linear-gradient(120deg, var(--hero-color) 0%, var(--hero-color)100%);
+	background-repeat: no-repeat;
+	background-size: 80% 10%;
+	background-position: 0 72%;
+	transition: background-size 0.25s ease-in;
+	-webkit-box-decoration-break: clone;
+	-ms-box-decoration-break: clone;
+	-o-box-decoration-break: clone;
+	box-decoration-break: clone;
+	white-space: nowrap;
+}
+.underline:hover {
+	background-size: 110% 10%;
+}
+p .underline {
+	background-position: 0 70%;
+}
+a .underline:hover{
+	background-size: 110% 80%;
+}
+h2 .underline {
+	background-position: 0 70%;
+}
+h3 .underline {
+	background-position: 0 70%;
+	padding-top: -10px;
+}
+h5 .underline {
+	background-position: 0 70%;
+	padding-top: -10px;
+}
+a .project-text:hover .underline {
+	background-size: 110% 80%;
+	color: var(--font-highlight);
+}
+.hero-text h1 .underline {
+	background-size: 0% 10%;
+	background-position: 0 72%;
+	background-image: linear-gradient(120deg, var(--accent-color) 0%, var(--accent-color)100%);
+}
+.hero-text h1 .underline:hover {
+	background-size: 80% 10%;
+	background-image: linear-gradient(120deg, var(--accent-color) 0%, var(--accent-color)100%);
+}
+.underline.selected {
+	background-size: 100% 10%;
+	background-position: 0 70%;
+}
+/* -\/- Text underline animation - SMALL -\/- */
+.side-nav .underline {
+	background-size: 4px 80%;
+	background-position: 8px 0;
+}
+.side-nav .underline:hover {
+    background-size: 4px 110%;
+}
+.side-nav .underline:active  {
+    background-size: 40px 110%;
+    background-image: linear-gradient(120deg, var(--hero-color) 0%, var(--hero-color)100%);
+    background-position: 0 0;
+    animation-duration: 3s;
+}
+/* | Project gallery section | */
+.project-gallery {
+	padding: 64px 40px 120px 0px;
+	transition: opacity 0.4s ease-in-out;
+}
+.project-gallery img {
+	width: 100%;
+	object-fit: cover;
+	transition: transform 0.6s ease;
+}
+.project-gallery img:hover {  
+	transform: scale(0.99);
+}
+.project-gallery-title {
+	margin-top: 8px;
+}
+.project-left-small {
+	width:40%;
+	float: left;
+	padding-right:2.5%;
+}
+.project-right-large {
+	width:55%;
+	float:right;
+	padding-left:2.5%;
+}
+.project-left-large {
+	width:55.5%;
+	float:left;
+	padding-right:2.5%;
+}
+.project-right-small {
+	width:39.5%;
+	float:right;
+	padding-left:2.5%;
+}
+.project-left-small, .project-right-large, .project-left-large, .project-right-small {
+	height: fit-content;
+	transition-delay: 1s;
+	display: inline-block;
+	margin-bottom: 200px;
+}
+.project-left-small h5 , .project-right-large h5, .project-left-large h5, .project-right-small h5 {
+	display: none;
+}
+/* Class for hiding elements with animation */
+.hidden {
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+} 
+.visible {
+	display: block;
+	opacity: 1;
+	transition: opacity 0.4s ease-in-out;
+} 
+.project-gallery.active {
+	display: block;
+}
+.hero-img.fade-out {
+	opacity: 0;
+}
+.project-gallery.fade-in {
+	display: block;
+	opacity: 1;
+}
+/*  \/  About me page text and highlighted effect  \/  */
+.about-text {
+	width: 90%;
+	height: auto;
+	margin-bottom: -35px;
+	display: inline-block;
+	opacity: 0.2;
+	transition: opacity 0.4s ease-in-out;
+	font-size: 54px;
+    font-family: "halogen", 'CraftworkGrotesk-heavy', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+	color: var(--font);
+}
+.about-text h2 {
+	font-weight: 900;
+}
+.about-text.active {
+	opacity: 1;
+}
+/*  \/  Project pages  \/  */
+.project-page {
+	width: calc(100% - 48px);
+	padding-right: 48px;
+	display: inline;
+}
+.project-title {
+	width: 90%;
+}
+.project-title h3 {
+	padding-left: 0px;
+}
+.project-info {
+	width: fit-content;
+	display: flex;
+}
+.project-info div {
+	margin-right: 40px;
+}
+.project-info h6 {
+	margin: -8px 0px;
+}
+.project-hero-image {
+	width: 100%;
+	margin-top: 40px;
+	margin-left: 0px;
+}
+/* \/ Porject Pages image gallary \/ */
+.project-gallery-parent {
+	padding-right:  40px;
+	width: calc(100% - 200px);
+	padding-top: 0px;
+	display: grid;
+	min-height: fit-content;
+	max-height: max-content;
+	grid-row-gap:0px;
+	grid-column-gap: 40px;
+}
+  /* \/ About The Project and img on project page  \/ */
+.about-project-text {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 20vh;
+	padding: 80px 40px 80px 0px;
+}
+.single {
+	height: auto;
+	width: 100%;
+	float: center;
+	grid-area: 1 / 1 / 7 / 13;
+}
+.half-left {
+	width: 100%;
+	float: left;
+	grid-area: 1 / 1 / 7 / 7;
+}
+.half-right {
+	width: 100%;
+	float: right;
+	grid-area: 1 / 7 / 7 / 13;
+}
+.two-thirds-left {
+	width: 100%;
+	float: left;
+	grid-area: 1 / 1 / 7 / 6;
+}
+.two-thirds-right {
+	width: 100%;
+	float: right;
+	grid-area: 1 / 6 / 7 / 13;
+}
+.thirds-left {
+	grid-area: 1 / 1 / 7 / 5;
+}
+.thirds-middle {
+	grid-area: 1 / 5 / 7 / 9;
+}
+.thirds-right {
+	grid-area: 1 / 9 / 7 / 13;
+}
+.single, .half-left, .half-right, .two-thirds-left, .two-thirds-right, .thirds-left, .thirds-middle, .thirds-right{
+	margin: 0px;
+}
+.space-sm {
+	height: 24px;
+}
+.space-base {
+	height: 40px;
+}
+.space-lg {
+	height: 120px;
+}
+/*  \/  Next Project footer section  \/  */
+.next-project {
+	height: auto;
+	margin-top: 80px;
+	margin-bottom: 0px;
+}
+.next-project h5 {
+	margin-bottom: -16px;
+}
+.next-project-img {
+	height: 240px;
+	overflow: hidden;
+}
+
+/* | Large (Phone/Tablet) | */
+@media (min-width: 1536px)  {
+	.hero-text h1 {
+		font-size: 3.5vw;
+	}
+	.about-text {
+		width: 75%;
+	}
+	.project-gallery-parent {
+		padding-right:  64px;
+		width: calc(100% - 224px);
+	}
+}
+/* | MEDUIM (Phone/Tablet) | */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.project-gallery-parent{
+		display: inline-block;
+	}
+	.hero-text {
+		width: 90%;
+	}
+	.about-text {
+		width: 100%;
+	}
+	.space-sm,.space-base, .space-lg {
+		height: 0px;
+	}
+}
+
+	/* | SMALL (Phone) | */
+@media (max-width: 768px) {
+	h2 {
+		font-size: 36px;
+	}
+	.parent {
+		padding: 40px;
+		width: calc(100% - 80px);
+		margin: 0px; /*  <- to compansactes for the side nav  */
+		display: inline-block;
+	}
+	.social-container {
+		display: none;
+	}
+	.moblie-nav {
+		display: flex;
+	}
+	.side-nav {
+		display: none;
+	}
+	.social-container {
+		position: absolute;
+		bottom: 40px;
+		left: 24px;
+	}
+	.project-gallery-parent {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.project-left-small, .project-right-large, .project-left-large, .project-right-small {
+		width: 100%;
+		margin-bottom:40px;
+	}
+	.project-left-small h5 , .project-right-large h5, .project-left-large h5, .project-right-small h5 {
+		display: block;
+	}
+	.hero-text {
+		width: 100%;
+	}
+	.hero-text h3 {
+		margin-bottom: -24px;
+	}
+	.hero-text h1 {
+		font-size: 36px;
+		font-weight: 700;
+	}
+	.project-gallery {
+		padding:64px 0px 120px 0px;
+	}
+	.about-text {
+		width: 100%;
+	}
+	.space-sm,.space-base, .space-lg {
+		height: 0px;
+	}
+}
